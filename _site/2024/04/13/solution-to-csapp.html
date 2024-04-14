@@ -4,11 +4,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>Solution to Computer Systems: A Programmer’s Perspective | Journal</title>
-<meta name="generator" content="Jekyll v4.3.3" />
+<meta name="generator" content="Jekyll v4.3.2" />
 <meta property="og:title" content="Solution to Computer Systems: A Programmer’s Perspective" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Practice Problem 1.1" />
-<meta property="og:description" content="Practice Problem 1.1" />
+<meta name="description" content="Chapter 1" />
+<meta property="og:description" content="Chapter 1" />
 <link rel="canonical" href="http://localhost:4000/2024/04/13/solution-to-csapp.html" />
 <meta property="og:url" content="http://localhost:4000/2024/04/13/solution-to-csapp.html" />
 <meta property="og:site_name" content="Journal" />
@@ -17,7 +17,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Solution to Computer Systems: A Programmer’s Perspective" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-04-13T00:00:00+09:00","datePublished":"2024-04-13T00:00:00+09:00","description":"Practice Problem 1.1","headline":"Solution to Computer Systems: A Programmer’s Perspective","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2024/04/13/solution-to-csapp.html"},"url":"http://localhost:4000/2024/04/13/solution-to-csapp.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-04-13T00:00:00+09:00","datePublished":"2024-04-13T00:00:00+09:00","description":"Chapter 1","headline":"Solution to Computer Systems: A Programmer’s Perspective","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2024/04/13/solution-to-csapp.html"},"url":"http://localhost:4000/2024/04/13/solution-to-csapp.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Journal" /></head>
 <body><header class="site-header" role="banner">
@@ -48,8 +48,24 @@
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">
-    <h1 id="practice-problem-11">Practice Problem 1.1</h1>
+    <h2 id="chapter-1">Chapter 1</h2>
 
+<p>\[\begin{align}S = \frac{1}{(1-\alpha)+\alpha/k} &amp;&amp; \text{(Amdahl’s Law)} \end{align}\]</p>
+
+<h1 id="practice-problem-11">Practice Problem 1.1</h1>
+
+<p><img src="http://localhost:4000/assets/1.1.png" alt="1.1.png" /></p>
+
+<p>A. It takes 25 hours to travel from Boise to Minneapolis and travelling through Montana takes 20 hours. Thus \(\alpha = \frac{\text{20hr}}{\text{25hr}} = 0.6\). The average speed improved from \(\text{100km/hr}\) to \(\text{150km/hr}\). Thus, \(k=\frac{\text{150km/hr}}{\text{100km/hr}}=1.5\). By Amdahl’s law, \(S=\frac{1}{(1-0.6 + 0.6/1.5)}=1.25\).</p>
+
+<p>B. If we rearrange Amdhal’s law for \(k\), we get 
+\[k=\frac{\alpha S}{1+S(\alpha-1)}\]</p>
+
+<p>Let \(v\) represent the speed at which the vehicle travels through Montana. Then, \[\alpha = \frac{\text{1500km}/v + (\text{1000km}/ \text{100km/hr})}{\text{25hr}} \]. Given \(S = 1.67\), we have \[\frac{v}{100} = \frac{1.67(\frac{\text{10hr}\cdot v + \text{1500km}}{\text{25hr}\cdot v})} {1 + 1.67(\frac{\text{(10hr)}\cdot v + 1500km}{\text{25hr}\cdot v}-1)}\]. Thus, \(v=\text{305.56km/hr}\)</p>
+
+<h1 id="practice-problem-12">Practice Problem 1.2</h1>
+
+<p>Given \(\alpha=0.9\) and \(S=4\), we have to improve 90% of this machine by a factor of \(k=\frac{(0.9)(0.4)}{1+4\cdot (0.9-1)} = 6\)</p>
 
   </div><a class="u-url" href="/2024/04/13/solution-to-csapp.html" hidden></a>
 </article>
