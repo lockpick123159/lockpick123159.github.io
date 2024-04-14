@@ -1,0 +1,20 @@
+---
+layout: post
+title: "Formula for Computer Systems"
+---
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+For vector \\(\vec{x} = [x_{w-1}, x_{w-2}, \ldots, x_0]\\)
+\\[B2U_{w}(\vec{x}) \stackrel{.}= \sum_{i=0}^{w-1} x_i2^i\\]
+\\[B2T_{w}(\vec{x}) \stackrel{.}= -x_{w-1}2^{w-1} + \sum_{i=0}^{w-2} x_i2^i\\]
+\\[B2O_{w}(\vec{x}) \stackrel{.}= -x_{w-1}(2^{w-1} - 1) + \sum_{i=0}^{w-2} x_i2^i\\]
+\\[B2S_{w}(\vec{x}\) \stackrel{.}= (-1)^{x_{w-1}} \cdot \left(\sum_{i=0}^{w-2} x_i2^i \right)\\]
+\\[U2T_{w}(u) = \begin{cases}u, & u\leq \text{TMax}_w\\\ u-2^w, & u>\text{TMax}_w\end{cases}\\]
+
+For \\(x\\) such that \\(\text{TMin} \leq x \leq \text{TMax}\\)
+\\[B2U_{w}(T2B_{w}(x)) = T2U_{w}(x) = x+x_{w-1}2^{w}\\]
+
+Truncation of an unsigned number
+\\[B2U_k([x_{k-1}, x_{k-2}, \ldots, x_{0}]) = B2U_w([x_{w-1}, x_{w-2}, \ldots, x_0])\mod 2^k\\]
+Truncation of a two's-complement number
+\\[B2U_k([x_{k-1}, x_{k-2}, \ldots, x_{0}]) = U2T_k(B2U_w([x_{w-1}, x_{w-2}, \ldots, x_0])\mod 2^k)\\]
