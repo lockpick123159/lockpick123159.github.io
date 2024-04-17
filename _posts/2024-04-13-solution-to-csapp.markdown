@@ -21,3 +21,117 @@ Let \\(v\\) represent the speed at which the vehicle travels through Montana. Th
 # Practice Problem 1.2
 
 Given \\(\alpha=0.9\\) and \\(S=4\\), we have to improve 90% of this machine by a factor of \\(k=\frac{(0.9)(0.4)}{1+4\cdot (0.9-1)} = 6\\)
+
+## Chapter 2
+
+# Practice Problem 2.1
+A. \\( (\text{0010 0101 1011 1001 1101 0010})_{2} \\)
+
+B. \\( (\text{AE49})_{16}\\)
+
+C. \\( (\text{1010 1000 1011 0011 1101})_2 \\)
+
+D. \\( (\text{322D96})_{16} \\)
+
+# Practice Problem 2.2
+
+| \\(n\\) | \\(2^n\\)(decimal)  | \\(2^n\\)(hexadecimal) |
+| -----   | ------------------  | ---------------------- |
+|   5     |         32          |          0x20          |
+|   23    |       8388608       |          0x800000      |
+|   15    |        32768        |          0x8000        |
+|   13    |        8192         |          0x2000        |
+|   12    |        4096         |          0x1000        |
+|   6     |         64          |          0x40          |
+|   8     |        256          |          0x100         |
+
+# Practice Problem 2.3
+
+| Decimal | Binary    | Hexadecimal |
+| ------- | ------    | ----------- |
+|   0     | 0000 0000 |    0x00     |
+|   158   | 1001 1110 |    0x9E     |
+|   76    | 0100 1100 |    0x4C     |
+|   145   | 1001 0001 |    0x91     |
+|   174   | 1010 1110 |    0xAE     |
+|   60    | 0011 1100 |    0x3C     |
+|   241   | 1111 0001 |    0xF1     |
+
+# Practice Problem 2.4
+A. 0x6061
+
+B. 0x603C
+
+C. 0x607c
+
+D. 0x9c
+
+# Practice Problem 2.5
+
+A. Little endian: 0x78      Big endian: 0x12
+B. Little endian: 0x7856    Big endian: 0x1234
+C. Little endian: 0x785634  Big endian: 0x123456
+
+# Practice Problem 2.6
+
+A. \\(\begin{align} \text{0x0027C8F8 = 0000 0000 0010 0111 1100 1000 1111 1000} \\\ \text{0x4A1F23E0 = 0100 1010 0001 1111 0010 0011 1110 0000}\end{align}\\)
+
+B.
+\\(\begin{align}\text{0x0027c8f8 = 0000 0000 0010} \textbf{ 0111 1100 1000 1111 1000} \\\ \text{0x4A1F23E0} \gg \text{2 = 0001 0010 1000} \textbf{ 0111 1100 1000 1111 1000} && \text{(20 bits)}\end{align}\\)  
+C. See 2.6 B
+
+# Practice Problem 2.7
+
+\\(\text{0x7271706F6E6D\}\\)
+
+# Practice Problem 2.8
+
+| Operation            |     Result       |
+| ---------            |     ------       |
+| \\(a\\)              | \\([01001110]\\) |
+| \\(b\\)              | \\([11100001]\\) |
+| \\(\sim a\\)         | \\([10010110]\\) |
+| \\(\sim b\\)         | \\([10101010]\\) |
+| \\(a\& b\\)          | \\([01000001]\\) |
+| \\(a \| b \\)        | \\([01111101]\\) | 
+| \\(a^\widehat{} b\\) | \\([00111100]\\) |
+
+# Practice Problem 2.9
+
+A.
+
+| Colour  | Complement |
+| ------  | ---------- |
+| Black   | \\(111\\)  |
+| Blue    | \\(110\\)  |
+| Green   | \\(101\\)  |
+| Cyan    | \\(100\\)  |
+| Red     | \\(011\\)  |
+| Magenta | \\(010\\)  |
+| Yellow  | \\(001\\)  |
+| White   | \\(000\\)  |
+
+B.
+
+\\(\begin{align} \text{Blue} \| \text{Green} &= \text{Cyan} \\\ \text{Yellow} \& \text{Cyan} &= \text{Blue} \\\ \text{Red}^\widehat{} \text{Magenta} &= \text{Blue} \end{align} \\)
+
+# Practice Problem 2.10
+
+| Step      | *x        | * y       | 
+| ----      | ----      | ----      |
+| Initially | a         | b         |       
+| Step 1    | a         | a^b       |
+| Step 2    | a^a^b = b | a^b       |
+| Step 3    | b         | b^a^b = a |
+
+# Practice Problem 2.11
+
+A. \\(\lceil{\frac{2k+1}{2}}\rceil\\)
+
+B. a[first] and a[last] point to the same variable in the last iteration when cnt is odd. The function inplace_swap xor these two variables however since they point to the same number, the operation evaluates to zero.
+
+C. ```
+    for (first = 0, last=cnt-1;
+        first < last;
+        first++, last--)
+    ```

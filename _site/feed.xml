@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-04-14T20:31:13+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Journal</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Solution to Computer Systems: A Programmer’s Perspective</title><link href="http://localhost:4000/2024/04/13/solution-to-csapp.html" rel="alternate" type="text/html" title="Solution to Computer Systems: A Programmer’s Perspective" /><published>2024-04-13T00:00:00+09:00</published><updated>2024-04-13T00:00:00+09:00</updated><id>http://localhost:4000/2024/04/13/solution-to-csapp</id><content type="html" xml:base="http://localhost:4000/2024/04/13/solution-to-csapp.html"><![CDATA[<h2 id="chapter-1">Chapter 1</h2>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-04-17T20:33:16+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Journal</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Solution to Computer Systems: A Programmer’s Perspective</title><link href="http://localhost:4000/2024/04/13/solution-to-csapp.html" rel="alternate" type="text/html" title="Solution to Computer Systems: A Programmer’s Perspective" /><published>2024-04-13T00:00:00+09:00</published><updated>2024-04-13T00:00:00+09:00</updated><id>http://localhost:4000/2024/04/13/solution-to-csapp</id><content type="html" xml:base="http://localhost:4000/2024/04/13/solution-to-csapp.html"><![CDATA[<h2 id="chapter-1">Chapter 1</h2>
 
 <p>\[\begin{align}S = \frac{1}{(1-\alpha)+\alpha/k} &amp;&amp; \text{(Amdahl’s Law)} \end{align}\]</p>
 
@@ -15,7 +15,281 @@
 
 <h1 id="practice-problem-12">Practice Problem 1.2</h1>
 
-<p>Given \(\alpha=0.9\) and \(S=4\), we have to improve 90% of this machine by a factor of \(k=\frac{(0.9)(0.4)}{1+4\cdot (0.9-1)} = 6\)</p>]]></content><author><name></name></author><summary type="html"><![CDATA[Chapter 1]]></summary></entry><entry><title type="html">Formula for Computer Systems</title><link href="http://localhost:4000/2024/04/12/formula.html" rel="alternate" type="text/html" title="Formula for Computer Systems" /><published>2024-04-12T00:00:00+09:00</published><updated>2024-04-12T00:00:00+09:00</updated><id>http://localhost:4000/2024/04/12/formula</id><content type="html" xml:base="http://localhost:4000/2024/04/12/formula.html"><![CDATA[<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<p>Given \(\alpha=0.9\) and \(S=4\), we have to improve 90% of this machine by a factor of \(k=\frac{(0.9)(0.4)}{1+4\cdot (0.9-1)} = 6\)</p>
+
+<h2 id="chapter-2">Chapter 2</h2>
+
+<h1 id="practice-problem-21">Practice Problem 2.1</h1>
+<p>A. \( (\text{0010 0101 1011 1001 1101 0010})_{2} \)</p>
+
+<p>B. \( (\text{AE49})_{16}\)</p>
+
+<p>C. \( (\text{1010 1000 1011 0011 1101})_2 \)</p>
+
+<p>D. \( (\text{322D96})_{16} \)</p>
+
+<h1 id="practice-problem-22">Practice Problem 2.2</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>\(n\)</th>
+      <th>\(2^n\)(decimal)</th>
+      <th>\(2^n\)(hexadecimal)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>5</td>
+      <td>32</td>
+      <td>0x20</td>
+    </tr>
+    <tr>
+      <td>23</td>
+      <td>8388608</td>
+      <td>0x800000</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>32768</td>
+      <td>0x8000</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>8192</td>
+      <td>0x2000</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>4096</td>
+      <td>0x1000</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>64</td>
+      <td>0x40</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>256</td>
+      <td>0x100</td>
+    </tr>
+  </tbody>
+</table>
+
+<h1 id="practice-problem-23">Practice Problem 2.3</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Decimal</th>
+      <th>Binary</th>
+      <th>Hexadecimal</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>0000 0000</td>
+      <td>0x00</td>
+    </tr>
+    <tr>
+      <td>158</td>
+      <td>1001 1110</td>
+      <td>0x9E</td>
+    </tr>
+    <tr>
+      <td>76</td>
+      <td>0100 1100</td>
+      <td>0x4C</td>
+    </tr>
+    <tr>
+      <td>145</td>
+      <td>1001 0001</td>
+      <td>0x91</td>
+    </tr>
+    <tr>
+      <td>174</td>
+      <td>1010 1110</td>
+      <td>0xAE</td>
+    </tr>
+    <tr>
+      <td>60</td>
+      <td>0011 1100</td>
+      <td>0x3C</td>
+    </tr>
+    <tr>
+      <td>241</td>
+      <td>1111 0001</td>
+      <td>0xF1</td>
+    </tr>
+  </tbody>
+</table>
+
+<h1 id="practice-problem-24">Practice Problem 2.4</h1>
+<p>A. 0x6061</p>
+
+<p>B. 0x603C</p>
+
+<p>C. 0x607c</p>
+
+<p>D. 0x9c</p>
+
+<h1 id="practice-problem-25">Practice Problem 2.5</h1>
+
+<p>A. Little endian: 0x78      Big endian: 0x12
+B. Little endian: 0x7856    Big endian: 0x1234
+C. Little endian: 0x785634  Big endian: 0x123456</p>
+
+<h1 id="practice-problem-26">Practice Problem 2.6</h1>
+
+<p>A. \(\begin{align} \text{0x0027C8F8 = 0000 0000 0010 0111 1100 1000 1111 1000} \\ \text{0x4A1F23E0 = 0100 1010 0001 1111 0010 0011 1110 0000}\end{align}\)</p>
+
+<p>B.
+\(\begin{align}\text{0x0027c8f8 = 0000 0000 0010} \textbf{ 0111 1100 1000 1111 1000} \\ \text{0x4A1F23E0} \gg \text{2 = 0001 0010 1000} \textbf{ 0111 1100 1000 1111 1000} &amp;&amp; \text{(20 bits)}\end{align}\)<br />
+C. See 2.6 B</p>
+
+<h1 id="practice-problem-27">Practice Problem 2.7</h1>
+
+<p>\(\text{0x7271706F6E6D}\)</p>
+
+<h1 id="practice-problem-28">Practice Problem 2.8</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Operation</th>
+      <th>Result</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>\(a\)</td>
+      <td>\([01001110]\)</td>
+    </tr>
+    <tr>
+      <td>\(b\)</td>
+      <td>\([11100001]\)</td>
+    </tr>
+    <tr>
+      <td>\(\sim a\)</td>
+      <td>\([10010110]\)</td>
+    </tr>
+    <tr>
+      <td>\(\sim b\)</td>
+      <td>\([10101010]\)</td>
+    </tr>
+    <tr>
+      <td>\(a\&amp; b\)</td>
+      <td>\([01000001]\)</td>
+    </tr>
+    <tr>
+      <td>\(a | b \)</td>
+      <td>\([01111101]\)</td>
+    </tr>
+    <tr>
+      <td>\(a^\widehat{} b\)</td>
+      <td>\([00111100]\)</td>
+    </tr>
+  </tbody>
+</table>
+
+<h1 id="practice-problem-29">Practice Problem 2.9</h1>
+
+<p>A.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Colour</th>
+      <th>Complement</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Black</td>
+      <td>\(111\)</td>
+    </tr>
+    <tr>
+      <td>Blue</td>
+      <td>\(110\)</td>
+    </tr>
+    <tr>
+      <td>Green</td>
+      <td>\(101\)</td>
+    </tr>
+    <tr>
+      <td>Cyan</td>
+      <td>\(100\)</td>
+    </tr>
+    <tr>
+      <td>Red</td>
+      <td>\(011\)</td>
+    </tr>
+    <tr>
+      <td>Magenta</td>
+      <td>\(010\)</td>
+    </tr>
+    <tr>
+      <td>Yellow</td>
+      <td>\(001\)</td>
+    </tr>
+    <tr>
+      <td>White</td>
+      <td>\(000\)</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>B.</p>
+
+<p>\(\begin{align} \text{Blue} | \text{Green} &amp;= \text{Cyan} \\ \text{Yellow} \&amp; \text{Cyan} &amp;= \text{Blue} \\ \text{Red}^\widehat{} \text{Magenta} &amp;= \text{Blue} \end{align} \)</p>
+
+<h1 id="practice-problem-210">Practice Problem 2.10</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Step</th>
+      <th>*x</th>
+      <th>* y</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Initially</td>
+      <td>a</td>
+      <td>b</td>
+    </tr>
+    <tr>
+      <td>Step 1</td>
+      <td>a</td>
+      <td>a^b</td>
+    </tr>
+    <tr>
+      <td>Step 2</td>
+      <td>a^a^b = b</td>
+      <td>a^b</td>
+    </tr>
+    <tr>
+      <td>Step 3</td>
+      <td>b</td>
+      <td>b^a^b = a</td>
+    </tr>
+  </tbody>
+</table>
+
+<h1 id="practice-problem-211">Practice Problem 2.11</h1>
+
+<p>A. \(\lceil{\frac{2k+1}{2}}\rceil\)</p>
+
+<p>B. a[first] and a[last] point to the same variable in the last iteration when cnt is odd. The function inplace_swap xor these two variables however since they point to the same number, the operation evaluates to zero.</p>
+
+<p>C. <code class="language-plaintext highlighter-rouge">
+    for (first = 0, last=cnt-1;
+        first &lt; last;
+        first++, last--)
+   </code></p>]]></content><author><name></name></author><summary type="html"><![CDATA[Chapter 1]]></summary></entry><entry><title type="html">Formula for Computer Systems</title><link href="http://localhost:4000/2024/04/12/formula.html" rel="alternate" type="text/html" title="Formula for Computer Systems" /><published>2024-04-12T00:00:00+09:00</published><updated>2024-04-12T00:00:00+09:00</updated><id>http://localhost:4000/2024/04/12/formula</id><content type="html" xml:base="http://localhost:4000/2024/04/12/formula.html"><![CDATA[<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
 <p>For vector \(\vec{x} = [x_{w-1}, x_{w-2}, \ldots, x_0]\)
 \[B2U_{w}(\vec{x}) \stackrel{.}= \sum_{i=0}^{w-1} x_i2^i\]
