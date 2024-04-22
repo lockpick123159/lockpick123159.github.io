@@ -4,7 +4,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>Solution to Computer Systems: A Programmer’s Perspective | Journal</title>
-<meta name="generator" content="Jekyll v4.3.2" />
+<meta name="generator" content="Jekyll v4.3.3" />
 <meta property="og:title" content="Solution to Computer Systems: A Programmer’s Perspective" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Chapter 1" />
@@ -335,11 +335,146 @@ C. See 2.6 B</p>
 
 <p>B. a[first] and a[last] point to the same variable in the last iteration when cnt is odd. The function inplace_swap xor these two variables however since they point to the same number, the operation evaluates to zero.</p>
 
-<p>C. <code class="language-plaintext highlighter-rouge">
-    for (first = 0, last=cnt-1;
-        first &lt; last;
-        first++, last--)
-   </code></p>
+<p>C.</p>
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="k">for</span> <span class="p">(</span><span class="n">first</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">last</span><span class="o">=</span><span class="n">cnt</span><span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+        <span class="n">first</span> <span class="o">&lt;</span> <span class="n">last</span><span class="p">;</span>
+        <span class="n">first</span><span class="o">++</span><span class="p">,</span> <span class="n">last</span><span class="o">--</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h1 id="practice-problem-212">Practice Problem 2.12</h1>
+
+<p>A. <code class="language-plaintext highlighter-rouge">x &amp;= 0xFF</code></p>
+
+<p>B. <code class="language-plaintext highlighter-rouge">x ^= ~0xFF</code></p>
+
+<p>C. <code class="language-plaintext highlighter-rouge">x |= 0xFF</code></p>
+
+<h1 id="practice-problem-213">Practice Problem 2.13</h1>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cm">/* Declarations of functions implementing operations bis and bic */</span>
+<span class="kt">int</span> <span class="nf">bis</span><span class="p">(</span><span class="kt">int</span> <span class="n">x</span><span class="p">,</span> <span class="kt">int</span> <span class="n">m</span><span class="p">);</span>
+<span class="kt">int</span> <span class="nf">bic</span><span class="p">(</span><span class="kt">int</span> <span class="n">x</span><span class="p">,</span> <span class="kt">int</span> <span class="n">m</span><span class="p">);</span>
+<span class="cm">/* Compute x|y using only calls to functions bis and bic */</span>
+<span class="kt">int</span> <span class="nf">bool_or</span><span class="p">(</span><span class="kt">int</span> <span class="n">x</span><span class="p">,</span> <span class="kt">int</span> <span class="n">y</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kt">int</span> <span class="n">result</span> <span class="o">=</span> <span class="n">bis</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">);</span>
+    <span class="k">return</span> <span class="n">result</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="cm">/* Compute x^y using only calls to functions bis and bic */</span>
+<span class="kt">int</span> <span class="nf">bool_xor</span><span class="p">(</span><span class="kt">int</span> <span class="n">x</span><span class="p">,</span> <span class="kt">int</span> <span class="n">y</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kt">int</span> <span class="n">result</span> <span class="o">=</span> <span class="cm">/* left to reader to solve (I couldn't do it myself) */</span><span class="p">;</span>
+    <span class="k">return</span> <span class="n">result</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h1 id="practice-problem-214">Practice Problem 2.14</h1>
+
+<p>\(\begin{align} a &amp;= 0101\ 0101 = 0x55\\ 
+                 b &amp;= 0100\ 0110 = 0x46\end{align}\)</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Expression</th>
+      <th>Value</th>
+      <th>Expression</th>
+      <th>Value</th>
+      <th> </th>
+      <th> </th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>a  &amp;   b</td>
+      <td>68</td>
+      <td>a&amp;&amp;b</td>
+      <td>0x01</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>a</td>
+      <td>b</td>
+      <td>87</td>
+      <td>a</td>
+      <td> </td>
+      <td>b</td>
+      <td>0x01</td>
+    </tr>
+    <tr>
+      <td>~a</td>
+      <td>~b</td>
+      <td>-71</td>
+      <td>!a</td>
+      <td> </td>
+      <td>!b</td>
+      <td>0x00</td>
+    </tr>
+    <tr>
+      <td>a  &amp;  !b</td>
+      <td>-71</td>
+      <td>a&amp;&amp;~b</td>
+      <td>0x01</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Skipped to Problem 2.45 due to lack of interest and knowing most of the content.</p>
+
+<h1 id="practice-problem-245">Practice Problem 2.45</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Fractional value</th>
+      <th>Binary representation</th>
+      <th>Decimal representation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>\(\frac{1}{8}\)</td>
+      <td>0.001</td>
+      <td>0.125</td>
+    </tr>
+    <tr>
+      <td>\(\frac{3}{4}\)</td>
+      <td>0.11</td>
+      <td>0.75</td>
+    </tr>
+    <tr>
+      <td>\(\frac{5}{16}\)</td>
+      <td>0.0011</td>
+      <td>0.3125</td>
+    </tr>
+    <tr>
+      <td>…</td>
+      <td>…</td>
+      <td>…</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>You get the point</p>
+
+<h1 id="practice-problem-246">Practice Problem 2.46</h1>
+<p>A.</p>
+
+<p>\(\begin{align}0.1 &amp;= 0.0001\ 1001\ 1001\ 1001\ 1001\ 1001\ [1001]\\x &amp;= 0.0001\ 1001\ 1001\ 1001\ 1001\ 0100\\0.1-x &amp;= 0.0000\ 0000\ 0000\ 0000\ 0000\ 0101\ [1001]\end{align}\)</p>
+
+<p>B.
+\(\begin{align} 0.1-x &amp;= 2^{-22} + 2^{-24} + [(2^{-25} + 2^{-28}) + (2^{-29} + 2^{-32}) + …] \\ &amp;= 2^{-22} + 2^{-24} + \sum_{i=0}^{\infty} (2^{-25-4i} + 2^{-28-4i})\\ &amp;= 2^{-22} + 2^{-24} + \frac{1}{5} \cdot 2^{-32} &amp; \text{Simplify the sum and apply geometric series formula}\\ &amp;= 2^{-22}(1+2^{-2}+\frac{2^{-10}}{5})\\ &amp;= 2^{-22}(\frac{6401}{5120}) \\ &amp;=  2.9806979\cdot 10^{-7}\end{align}\)</p>
+
+<p>C.</p>
+
+<p>\(\text{100hr} = 3600000 \cdot \text{0.1s} = 3600000\cdot (0.000110011[0011]\cdots)_2\\ \)
+\(3600000\cdot 0.1\text{s} - 3600000\cdot (x)\text{s} = 3600000(0.1\text{s}-(x)s)=3600000\cdot 2.9806979\cdot 10^{-7}\text{s} = 1.073051244\text{s}\)</p>
+
+<p>D.</p>
 
   </div><a class="u-url" href="/2024/04/13/solution-to-csapp.html" hidden></a>
 </article>
@@ -355,7 +490,7 @@ C. See 2.6 B</p>
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-1">
         <ul class="contact-list">
-          <li class="p-name">Journal</li><li><a class="u-email" href="mailto:lockpick.lee@mail.utoronto.ca">lockpick.lee@mail.utoronto.ca</a></li></ul>
+          <li class="p-name">Journal</li><li><a class="u-email" href="mailto:leechr123159@pm.me, lockpick.lee@mail.utoronto.ca">leechr123159@pm.me, lockpick.lee@mail.utoronto.ca</a></li></ul>
       </div>
 
       <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/jekyll"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">jekyll</span></a></li><li><a href="https://www.twitter.com/jekyllrb"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">jekyllrb</span></a></li></ul>
