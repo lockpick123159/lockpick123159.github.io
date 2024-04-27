@@ -1,0 +1,308 @@
+2024-04-27T06:17:53.902Z In(05) host-72431 Log for VMware Workstation pid=72431 version=17.5.1 build=build-23298084 option=Release
+2024-04-27T06:17:53.902Z In(05) host-72431 The host is x86_64.
+2024-04-27T06:17:53.902Z In(05) host-72431 Host codepage=UTF-8 encoding=UTF-8
+2024-04-27T06:17:53.902Z In(05) host-72431 Host is Linux 6.8.7-300.fc40.x86_64 Fedora Linux 40 (Workstation Edition) 40 Fedora Linux 40 (Workstation Edition) cpe:/o:fedoraproject:fedora:40
+2024-04-27T06:17:53.902Z In(05) host-72431 Host offset from UTC is -04:00.
+2024-04-27T06:17:53.901Z In(05) host-72431 DictionaryLoad: Cannot open file "/usr/lib/vmware/settings": No such file or directory.
+2024-04-27T06:17:53.901Z In(05) host-72431 [msg.dictionary.load.openFailed] Cannot open file "/usr/lib/vmware/settings": No such file or directory.
+2024-04-27T06:17:53.901Z In(05) host-72431 PREF Optional preferences file not found at /usr/lib/vmware/settings. Using default values.
+2024-04-27T06:17:53.901Z In(05) host-72431 DictionaryLoad: Cannot open file "/home/chrislee/.vmware/config": No such file or directory.
+2024-04-27T06:17:53.901Z In(05) host-72431 [msg.dictionary.load.openFailed] Cannot open file "/home/chrislee/.vmware/config": No such file or directory.
+2024-04-27T06:17:53.901Z In(05) host-72431 PREF Optional preferences file not found at /home/chrislee/.vmware/config. Using default values.
+2024-04-27T06:17:53.901Z In(05) host-72431 DictionaryLoad: Cannot open file "/home/chrislee/.vmware/preferences": No such file or directory.
+2024-04-27T06:17:53.901Z In(05) host-72431 [msg.dictionary.load.openFailed] Cannot open file "/home/chrislee/.vmware/preferences": No such file or directory.
+2024-04-27T06:17:53.901Z In(05) host-72431 PREF Optional preferences file not found at /home/chrislee/.vmware/preferences. Using default values.
+2024-04-27T06:17:53.902Z Wa(03) host-72431 Logging to /tmp/vmware-chrislee/vmware-72431.log
+2024-04-27T06:17:53.908Z In(05) host-72431 Obtaining info using the running kernel.
+2024-04-27T06:17:53.908Z In(05) host-72431 Created new pathsHash.
+2024-04-27T06:17:53.908Z In(05) host-72431 Setting header path for 6.8.7-300.fc40.x86_64 to "/lib/modules/6.8.7-300.fc40.x86_64/build/include".
+2024-04-27T06:17:53.908Z In(05) host-72431 Validating path "/lib/modules/6.8.7-300.fc40.x86_64/build/include" for kernel release "6.8.7-300.fc40.x86_64".
+2024-04-27T06:17:53.908Z In(05) host-72431 Failed to find /lib/modules/6.8.7-300.fc40.x86_64/build/include/linux/version.h
+2024-04-27T06:17:53.908Z In(05) host-72431 /lib/modules/6.8.7-300.fc40.x86_64/build/include/linux/version.h not found, looking for generated/uapi/linux/version.h instead.
+2024-04-27T06:17:53.908Z In(05) host-72431 using /usr/bin/gcc for preprocess check
+2024-04-27T06:17:53.915Z In(05) host-72431 Preprocessed UTS_RELEASE, got value "6.8.7-300.fc40.x86_64".
+2024-04-27T06:17:53.915Z In(05) host-72431 The header path "/lib/modules/6.8.7-300.fc40.x86_64/build/include" for the kernel "6.8.7-300.fc40.x86_64" is valid.  Whoohoo!
+2024-04-27T06:17:54.244Z In(05) host-72431 found symbol version file /lib/modules/6.8.7-300.fc40.x86_64/build/Module.symvers
+2024-04-27T06:17:54.244Z In(05) host-72431 Reading symbol versions from /lib/modules/6.8.7-300.fc40.x86_64/build/Module.symvers.
+2024-04-27T06:17:54.270Z In(05) host-72431 Read 26689 symbol versions
+2024-04-27T06:17:54.270Z In(05) host-72431 Reading in info for the vmmon module.
+2024-04-27T06:17:54.270Z In(05) host-72431 Reading in info for the vmnet module.
+2024-04-27T06:17:54.270Z In(05) host-72431 Invoking modinfo on "vmmon".
+2024-04-27T06:17:54.274Z In(05) host-72431 "/sbin/modinfo" exited with status 256.
+2024-04-27T06:17:54.274Z In(05) host-72431 Invoking modinfo on "vmnet".
+2024-04-27T06:17:54.276Z In(05) host-72431 "/sbin/modinfo" exited with status 256.
+2024-04-27T06:17:54.286Z In(05) host-72431 to be installed: vmmon status: 0
+2024-04-27T06:17:54.286Z In(05) host-72431 to be installed: vmnet status: 0
+2024-04-27T06:17:54.289Z In(05) host-72431 Obtaining info using the running kernel.
+2024-04-27T06:17:54.290Z In(05) host-72431 Setting header path for 6.8.7-300.fc40.x86_64 to "/lib/modules/6.8.7-300.fc40.x86_64/build/include".
+2024-04-27T06:17:54.290Z In(05) host-72431 Validating path "/lib/modules/6.8.7-300.fc40.x86_64/build/include" for kernel release "6.8.7-300.fc40.x86_64".
+2024-04-27T06:17:54.290Z In(05) host-72431 Failed to find /lib/modules/6.8.7-300.fc40.x86_64/build/include/linux/version.h
+2024-04-27T06:17:54.290Z In(05) host-72431 /lib/modules/6.8.7-300.fc40.x86_64/build/include/linux/version.h not found, looking for generated/uapi/linux/version.h instead.
+2024-04-27T06:17:54.290Z In(05) host-72431 using /usr/bin/gcc for preprocess check
+2024-04-27T06:17:54.296Z In(05) host-72431 Preprocessed UTS_RELEASE, got value "6.8.7-300.fc40.x86_64".
+2024-04-27T06:17:54.296Z In(05) host-72431 The header path "/lib/modules/6.8.7-300.fc40.x86_64/build/include" for the kernel "6.8.7-300.fc40.x86_64" is valid.  Whoohoo!
+2024-04-27T06:17:54.623Z In(05) host-72431 found symbol version file /lib/modules/6.8.7-300.fc40.x86_64/build/Module.symvers
+2024-04-27T06:17:54.623Z In(05) host-72431 Reading symbol versions from /lib/modules/6.8.7-300.fc40.x86_64/build/Module.symvers.
+2024-04-27T06:17:54.648Z In(05) host-72431 Read 26689 symbol versions
+2024-04-27T06:17:54.650Z In(05) host-72431 Kernel header path retrieved from FileEntry: /lib/modules/6.8.7-300.fc40.x86_64/build/include
+2024-04-27T06:17:54.650Z In(05) host-72431 Update kernel header path to /lib/modules/6.8.7-300.fc40.x86_64/build/include
+2024-04-27T06:17:54.650Z In(05) host-72431 Validating path "/lib/modules/6.8.7-300.fc40.x86_64/build/include" for kernel release "6.8.7-300.fc40.x86_64".
+2024-04-27T06:17:54.650Z In(05) host-72431 Failed to find /lib/modules/6.8.7-300.fc40.x86_64/build/include/linux/version.h
+2024-04-27T06:17:54.650Z In(05) host-72431 /lib/modules/6.8.7-300.fc40.x86_64/build/include/linux/version.h not found, looking for generated/uapi/linux/version.h instead.
+2024-04-27T06:17:54.650Z In(05) host-72431 using /usr/bin/gcc for preprocess check
+2024-04-27T06:17:54.656Z In(05) host-72431 Preprocessed UTS_RELEASE, got value "6.8.7-300.fc40.x86_64".
+2024-04-27T06:17:54.656Z In(05) host-72431 The header path "/lib/modules/6.8.7-300.fc40.x86_64/build/include" for the kernel "6.8.7-300.fc40.x86_64" is valid.  Whoohoo!
+2024-04-27T06:17:54.657Z In(05) host-72431 Found compiler at "/usr/bin/gcc"
+2024-04-27T06:17:54.659Z In(05) host-72431 Got gcc version "14".
+2024-04-27T06:17:54.659Z In(05) host-72431 The GCC version matches the kernel GCC minor version like a glove.
+2024-04-27T06:17:54.660Z In(05) host-72431 Got gcc version "14".
+2024-04-27T06:17:54.660Z In(05) host-72431 The GCC version matches the kernel GCC minor version like a glove.
+2024-04-27T06:17:54.662Z In(05) host-72431 Trying to find a suitable PBM set for kernel "6.8.7-300.fc40.x86_64".
+2024-04-27T06:17:54.662Z In(05) host-72431 No matching PBM set was found for kernel "6.8.7-300.fc40.x86_64".
+2024-04-27T06:17:54.662Z In(05) host-72431 The GCC version matches the kernel GCC minor version like a glove.
+2024-04-27T06:17:54.662Z In(05) host-72431 Validating path "/lib/modules/6.8.7-300.fc40.x86_64/build/include" for kernel release "6.8.7-300.fc40.x86_64".
+2024-04-27T06:17:54.662Z In(05) host-72431 Failed to find /lib/modules/6.8.7-300.fc40.x86_64/build/include/linux/version.h
+2024-04-27T06:17:54.662Z In(05) host-72431 /lib/modules/6.8.7-300.fc40.x86_64/build/include/linux/version.h not found, looking for generated/uapi/linux/version.h instead.
+2024-04-27T06:17:54.662Z In(05) host-72431 using /usr/bin/gcc for preprocess check
+2024-04-27T06:17:54.669Z In(05) host-72431 Preprocessed UTS_RELEASE, got value "6.8.7-300.fc40.x86_64".
+2024-04-27T06:17:54.669Z In(05) host-72431 The header path "/lib/modules/6.8.7-300.fc40.x86_64/build/include" for the kernel "6.8.7-300.fc40.x86_64" is valid.  Whoohoo!
+2024-04-27T06:17:57.426Z In(05) host-72431 The GCC version matches the kernel GCC minor version like a glove.
+2024-04-27T06:17:57.426Z In(05) host-72431 Validating path "/lib/modules/6.8.7-300.fc40.x86_64/build/include" for kernel release "6.8.7-300.fc40.x86_64".
+2024-04-27T06:17:57.426Z In(05) host-72431 Failed to find /lib/modules/6.8.7-300.fc40.x86_64/build/include/linux/version.h
+2024-04-27T06:17:57.426Z In(05) host-72431 /lib/modules/6.8.7-300.fc40.x86_64/build/include/linux/version.h not found, looking for generated/uapi/linux/version.h instead.
+2024-04-27T06:17:57.426Z In(05) host-72431 using /usr/bin/gcc for preprocess check
+2024-04-27T06:17:57.433Z In(05) host-72431 Preprocessed UTS_RELEASE, got value "6.8.7-300.fc40.x86_64".
+2024-04-27T06:17:57.433Z In(05) host-72431 The header path "/lib/modules/6.8.7-300.fc40.x86_64/build/include" for the kernel "6.8.7-300.fc40.x86_64" is valid.  Whoohoo!
+2024-04-27T06:17:57.433Z In(05) host-72431 Using temp dir "/tmp".
+2024-04-27T06:18:06.233Z In(05) host-72431 Stopping vmware (via systemctl):  [  OK  ]
+2024-04-27T06:18:06.233Z In(05) host-72431 make: Entering directory '/tmp/modconfig-JlZm8J/vmmon-only'
+2024-04-27T06:18:06.233Z In(05) host-72431 /usr/bin/make -C /lib/modules/6.8.7-300.fc40.x86_64/build/include/.. M=$PWD SRCROOT=$PWD/. \
+2024-04-27T06:18:06.233Z In(05) host-72431   MODULEBUILDDIR= modules
+2024-04-27T06:18:06.233Z In(05) host-72431 make[1]: Entering directory '/usr/src/kernels/6.8.7-300.fc40.x86_64'
+2024-04-27T06:18:06.233Z In(05) host-72431   CC [M]  /tmp/modconfig-JlZm8J/vmmon-only/linux/driver.o
+2024-04-27T06:18:06.233Z In(05) host-72431   CC [M]  /tmp/modconfig-JlZm8J/vmmon-only/linux/driverLog.o
+2024-04-27T06:18:06.233Z In(05) host-72431   CC [M]  /tmp/modconfig-JlZm8J/vmmon-only/linux/hostif.o
+2024-04-27T06:18:06.233Z In(05) host-72431   CC [M]  /tmp/modconfig-JlZm8J/vmmon-only/common/apic.o
+2024-04-27T06:18:06.233Z In(05) host-72431   CC [M]  /tmp/modconfig-JlZm8J/vmmon-only/common/comport.o
+2024-04-27T06:18:06.233Z In(05) host-72431   CC [M]  /tmp/modconfig-JlZm8J/vmmon-only/common/cpuid.o
+2024-04-27T06:18:06.233Z In(05) host-72431   CC [M]  /tmp/modconfig-JlZm8J/vmmon-only/common/crosspage.o
+2024-04-27T06:18:06.233Z In(05) host-72431   CC [M]  /tmp/modconfig-JlZm8J/vmmon-only/common/memtrack.o
+2024-04-27T06:18:06.233Z In(05) host-72431   CC [M]  /tmp/modconfig-JlZm8J/vmmon-only/common/moduleloop.o
+2024-04-27T06:18:06.233Z In(05) host-72431   CC [M]  /tmp/modconfig-JlZm8J/vmmon-only/common/phystrack.o
+2024-04-27T06:18:06.233Z In(05) host-72431   CC [M]  /tmp/modconfig-JlZm8J/vmmon-only/common/sharedAreaVmmon.o
+2024-04-27T06:18:06.233Z In(05) host-72431   CC [M]  /tmp/modconfig-JlZm8J/vmmon-only/common/statVarsVmmon.o
+2024-04-27T06:18:06.233Z In(05) host-72431   CC [M]  /tmp/modconfig-JlZm8J/vmmon-only/common/task.o
+2024-04-27T06:18:06.233Z In(05) host-72431   CC [M]  /tmp/modconfig-JlZm8J/vmmon-only/common/vmx86.o
+2024-04-27T06:18:06.233Z In(05) host-72431   CC [M]  /tmp/modconfig-JlZm8J/vmmon-only/bootstrap/bootstrap.o
+2024-04-27T06:18:06.233Z In(05) host-72431   CC [M]  /tmp/modconfig-JlZm8J/vmmon-only/bootstrap/monLoader.o
+2024-04-27T06:18:06.233Z In(05) host-72431   CC [M]  /tmp/modconfig-JlZm8J/vmmon-only/bootstrap/monLoaderVmmon.o
+2024-04-27T06:18:06.233Z In(05) host-72431   CC [M]  /tmp/modconfig-JlZm8J/vmmon-only/bootstrap/vmmblob.o
+2024-04-27T06:18:06.233Z In(05) host-72431 make[1]: Leaving directory '/usr/src/kernels/6.8.7-300.fc40.x86_64'
+2024-04-27T06:18:06.233Z In(05) host-72431 make: Leaving directory '/tmp/modconfig-JlZm8J/vmmon-only'
+2024-04-27T06:18:06.233Z In(05) host-72431 make: Entering directory '/tmp/modconfig-JlZm8J/vmnet-only'
+2024-04-27T06:18:06.233Z In(05) host-72431 /usr/bin/make -C /lib/modules/6.8.7-300.fc40.x86_64/build/include/.. M=$PWD SRCROOT=$PWD/. \
+2024-04-27T06:18:06.233Z In(05) host-72431   MODULEBUILDDIR= modules
+2024-04-27T06:18:06.233Z In(05) host-72431 make[1]: Entering directory '/usr/src/kernels/6.8.7-300.fc40.x86_64'
+2024-04-27T06:18:06.233Z In(05) host-72431   CC [M]  /tmp/modconfig-JlZm8J/vmnet-only/driver.o
+2024-04-27T06:18:06.233Z In(05) host-72431   CC [M]  /tmp/modconfig-JlZm8J/vmnet-only/hub.o
+2024-04-27T06:18:06.233Z In(05) host-72431   CC [M]  /tmp/modconfig-JlZm8J/vmnet-only/userif.o
+2024-04-27T06:18:06.233Z In(05) host-72431   CC [M]  /tmp/modconfig-JlZm8J/vmnet-only/netif.o
+2024-04-27T06:18:06.233Z In(05) host-72431   CC [M]  /tmp/modconfig-JlZm8J/vmnet-only/bridge.o
+2024-04-27T06:18:06.233Z In(05) host-72431   CC [M]  /tmp/modconfig-JlZm8J/vmnet-only/procfs.o
+2024-04-27T06:18:06.233Z In(05) host-72431   CC [M]  /tmp/modconfig-JlZm8J/vmnet-only/smac_compat.o
+2024-04-27T06:18:06.233Z In(05) host-72431   CC [M]  /tmp/modconfig-JlZm8J/vmnet-only/smac.o
+2024-04-27T06:18:06.233Z In(05) host-72431   CC [M]  /tmp/modconfig-JlZm8J/vmnet-only/vnetEvent.o
+2024-04-27T06:18:06.233Z In(05) host-72431   CC [M]  /tmp/modconfig-JlZm8J/vmnet-only/vnetUserListener.o
+2024-04-27T06:18:06.233Z In(05) host-72431   LD [M]  /tmp/modconfig-JlZm8J/vmnet-only/vmnet.o
+2024-04-27T06:18:06.233Z In(05) host-72431   MODPOST /tmp/modconfig-JlZm8J/vmnet-only/Module.symvers
+2024-04-27T06:18:06.233Z In(05) host-72431   CC [M]  /tmp/modconfig-JlZm8J/vmnet-only/vmnet.mod.o
+2024-04-27T06:18:06.233Z In(05) host-72431   LD [M]  /tmp/modconfig-JlZm8J/vmnet-only/vmnet.ko
+2024-04-27T06:18:06.233Z In(05) host-72431   BTF [M] /tmp/modconfig-JlZm8J/vmnet-only/vmnet.ko
+2024-04-27T06:18:06.233Z In(05) host-72431 make[1]: Leaving directory '/usr/src/kernels/6.8.7-300.fc40.x86_64'
+2024-04-27T06:18:06.233Z In(05) host-72431 /usr/bin/make -C $PWD SRCROOT=$PWD/. \
+2024-04-27T06:18:06.233Z In(05) host-72431   MODULEBUILDDIR= postbuild
+2024-04-27T06:18:06.233Z In(05) host-72431 make[1]: Entering directory '/tmp/modconfig-JlZm8J/vmnet-only'
+2024-04-27T06:18:06.233Z In(05) host-72431 make[1]: 'postbuild' is up to date.
+2024-04-27T06:18:06.233Z In(05) host-72431 make[1]: Leaving directory '/tmp/modconfig-JlZm8J/vmnet-only'
+2024-04-27T06:18:06.233Z In(05) host-72431 cp -f vmnet.ko ./../vmnet.o
+2024-04-27T06:18:06.233Z In(05) host-72431 make: Leaving directory '/tmp/modconfig-JlZm8J/vmnet-only'
+2024-04-27T06:18:06.233Z In(05) host-72431 [AppLoader] GLib does not have GSettings support.
+2024-04-27T06:18:06.233Z In(05) host-72431 Using kernel build system.
+2024-04-27T06:18:06.233Z In(05) host-72431 In file included from /tmp/modconfig-JlZm8J/vmmon-only/common/vmx86.c:52:
+2024-04-27T06:18:06.233Z In(05) host-72431 ./arch/x86/include/asm/timex.h: In function ‘random_get_entropy’:
+2024-04-27T06:18:06.233Z In(05) host-72431 ./arch/x86/include/asm/timex.h:12:24: error: implicit declaration of function ‘random_get_entropy_fallback’; did you mean ‘random_get_entropy’? [-Wimplicit-function-declaration]
+2024-04-27T06:18:06.233Z In(05) host-72431    12 |                 return random_get_entropy_fallback();
+2024-04-27T06:18:06.233Z In(05) host-72431       |                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+2024-04-27T06:18:06.233Z In(05) host-72431       |                        random_get_entropy
+2024-04-27T06:18:06.233Z In(05) host-72431 /tmp/modconfig-JlZm8J/vmmon-only/common/task.c:548:1: warning: no previous prototype for ‘TaskGetFlatWriteableDataSegment’ [-Wmissing-prototypes]
+2024-04-27T06:18:06.233Z In(05) host-72431   548 | TaskGetFlatWriteableDataSegment(void)
+2024-04-27T06:18:06.233Z In(05) host-72431       | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2024-04-27T06:18:06.233Z In(05) host-72431 /tmp/modconfig-JlZm8J/vmmon-only/common/vmx86.c: At top level:
+2024-04-27T06:18:06.233Z In(05) host-72431 /tmp/modconfig-JlZm8J/vmmon-only/common/vmx86.c:700:1: warning: no previous prototype for ‘Vmx86FreeVMDriver’ [-Wmissing-prototypes]
+2024-04-27T06:18:06.233Z In(05) host-72431   700 | Vmx86FreeVMDriver(VMDriver *vm)
+2024-04-27T06:18:06.233Z In(05) host-72431       | ^~~~~~~~~~~~~~~~~
+2024-04-27T06:18:06.233Z In(05) host-72431 /tmp/modconfig-JlZm8J/vmmon-only/common/vmx86.c:733:1: warning: no previous prototype for ‘Vmx86AllocVMDriver’ [-Wmissing-prototypes]
+2024-04-27T06:18:06.233Z In(05) host-72431   733 | Vmx86AllocVMDriver(uint32 numVCPUs)
+2024-04-27T06:18:06.233Z In(05) host-72431       | ^~~~~~~~~~~~~~~~~~
+2024-04-27T06:18:06.233Z In(05) host-72431 make[3]: *** [scripts/Makefile.build:243: /tmp/modconfig-JlZm8J/vmmon-only/common/vmx86.o] Error 1
+2024-04-27T06:18:06.233Z In(05) host-72431 make[3]: *** Waiting for unfinished jobs....
+2024-04-27T06:18:06.233Z In(05) host-72431 /tmp/modconfig-JlZm8J/vmmon-only/linux/hostif.c:2926:1: warning: no previous prototype for ‘HostIFCheckTrackedMPN’ [-Wmissing-prototypes]
+2024-04-27T06:18:06.233Z In(05) host-72431  2926 | HostIFCheckTrackedMPN(VMDriver *vm, // IN: The VM instance
+2024-04-27T06:18:06.233Z In(05) host-72431       | ^~~~~~~~~~~~~~~~~~~~~
+2024-04-27T06:18:06.233Z In(05) host-72431 /tmp/modconfig-JlZm8J/vmmon-only/linux/hostif.c:3046:1: warning: no previous prototype for ‘HostIFWritePhysicalWork’ [-Wmissing-prototypes]
+2024-04-27T06:18:06.233Z In(05) host-72431  3046 | HostIFWritePhysicalWork(MA ma,             // MA to be written to
+2024-04-27T06:18:06.233Z In(05) host-72431       | ^~~~~~~~~~~~~~~~~~~~~~~
+2024-04-27T06:18:06.233Z In(05) host-72431 /tmp/modconfig-JlZm8J/vmmon-only/linux/hostif.c:3205:1: warning: no previous prototype for ‘HostIFStartTimer’ [-Wmissing-prototypes]
+2024-04-27T06:18:06.233Z In(05) host-72431  3205 | HostIFStartTimer(Bool rateChanged,  //IN: Did rate change?
+2024-04-27T06:18:06.233Z In(05) host-72431       | ^~~~~~~~~~~~~~~~
+2024-04-27T06:18:06.233Z In(05) host-72431 /tmp/modconfig-JlZm8J/vmmon-only/linux/driver.c:271:1: warning: no previous prototype for ‘LinuxDriverInit’ [-Wmissing-prototypes]
+2024-04-27T06:18:06.233Z In(05) host-72431   271 | LinuxDriverInit(void)
+2024-04-27T06:18:06.233Z In(05) host-72431       | ^~~~~~~~~~~~~~~
+2024-04-27T06:18:06.233Z In(05) host-72431 /tmp/modconfig-JlZm8J/vmmon-only/linux/driver.c:339:1: warning: no previous prototype for ‘LinuxDriverExit’ [-Wmissing-prototypes]
+2024-04-27T06:18:06.233Z In(05) host-72431   339 | LinuxDriverExit(void)
+2024-04-27T06:18:06.233Z In(05) host-72431       | ^~~~~~~~~~~~~~~
+2024-04-27T06:18:06.233Z In(05) host-72431 make[2]: *** [/usr/src/kernels/6.8.7-300.fc40.x86_64/Makefile:1939: /tmp/modconfig-JlZm8J/vmmon-only] Error 2
+2024-04-27T06:18:06.233Z In(05) host-72431 make[1]: *** [Makefile:252: __sub-make] Error 2
+2024-04-27T06:18:06.233Z In(05) host-72431 make: *** [Makefile:117: vmmon.ko] Error 2
+2024-04-27T06:18:06.233Z In(05) host-72431 Using kernel build system.
+2024-04-27T06:18:06.233Z In(05) host-72431 /tmp/modconfig-JlZm8J/vmnet-only/userif.c:1091:1: warning: no previous prototype for ‘VNetUserIf_Create’ [-Wmissing-prototypes]
+2024-04-27T06:18:06.233Z In(05) host-72431  1091 | VNetUserIf_Create(VNetPort **ret) // OUT
+2024-04-27T06:18:06.233Z In(05) host-72431       | ^~~~~~~~~~~~~~~~~
+2024-04-27T06:18:06.233Z In(05) host-72431 /tmp/modconfig-JlZm8J/vmnet-only/vnetUserListener.c:87:1: warning: no previous prototype for ‘VNetUserListener_Create’ [-Wmissing-prototypes]
+2024-04-27T06:18:06.233Z In(05) host-72431    87 | VNetUserListener_Create(uint32 classMask,  // IN: the listener's class mask
+2024-04-27T06:18:06.233Z In(05) host-72431       | ^~~~~~~~~~~~~~~~~~~~~~~
+2024-04-27T06:18:06.233Z In(05) host-72431 /tmp/modconfig-JlZm8J/vmnet-only/netif.c:173:1: warning: no previous prototype for ‘VNetNetIf_Create’ [-Wmissing-prototypes]
+2024-04-27T06:18:06.233Z In(05) host-72431   173 | VNetNetIf_Create(char *devName,  // IN:
+2024-04-27T06:18:06.233Z In(05) host-72431       | ^~~~~~~~~~~~~~~~
+2024-04-27T06:18:06.233Z In(05) host-72431 /tmp/modconfig-JlZm8J/vmnet-only/bridge.c:258:1: warning: no previous prototype for ‘VNetBridge_Create’ [-Wmissing-prototypes]
+2024-04-27T06:18:06.233Z In(05) host-72431   258 | VNetBridge_Create(const char *devName, // IN:  name of device (e.g., "eth0")
+2024-04-27T06:18:06.233Z In(05) host-72431       | ^~~~~~~~~~~~~~~~~
+2024-04-27T06:18:06.233Z In(05) host-72431 /tmp/modconfig-JlZm8J/vmnet-only/bridge.c:1411:1: warning: no previous prototype for ‘VNetBridgeSendLargePacket’ [-Wmissing-prototypes]
+2024-04-27T06:18:06.233Z In(05) host-72431  1411 | VNetBridgeSendLargePacket(struct sk_buff *skb,        // IN: packet to split
+2024-04-27T06:18:06.233Z In(05) host-72431       | ^~~~~~~~~~~~~~~~~~~~~~~~~
+2024-04-27T06:18:06.233Z In(05) host-72431 /tmp/modconfig-JlZm8J/vmnet-only/vmnet.o: warning: objtool: VNetCsumCopyDatagram+0x52: call to csum_partial_copy_nocheck() with UACCESS enabled
+2024-04-27T06:18:06.233Z In(05) host-72431 /tmp/modconfig-JlZm8J/vmnet-only/vmnet.o: warning: objtool: init_module(): not an indirect call target
+2024-04-27T06:18:06.233Z In(05) host-72431 /tmp/modconfig-JlZm8J/vmnet-only/vmnet.o: warning: objtool: cleanup_module(): not an indirect call target
+2024-04-27T06:18:06.233Z In(05) host-72431 Skipping BTF generation for /tmp/modconfig-JlZm8J/vmnet-only/vmnet.ko due to unavailability of vmlinux
+2024-04-27T06:18:06.233Z In(05) host-72431 Unable to install all modules.  See log for details.
+2024-04-27T06:18:06.233Z In(05) host-72431 
+2024-04-27T06:18:13.153Z In(05) host-72431 The GCC version matches the kernel GCC minor version like a glove.
+2024-04-27T06:18:13.153Z In(05) host-72431 Validating path "/lib/modules/6.8.7-300.fc40.x86_64/build/include" for kernel release "6.8.7-300.fc40.x86_64".
+2024-04-27T06:18:13.153Z In(05) host-72431 Failed to find /lib/modules/6.8.7-300.fc40.x86_64/build/include/linux/version.h
+2024-04-27T06:18:13.153Z In(05) host-72431 /lib/modules/6.8.7-300.fc40.x86_64/build/include/linux/version.h not found, looking for generated/uapi/linux/version.h instead.
+2024-04-27T06:18:13.153Z In(05) host-72431 using /usr/bin/gcc for preprocess check
+2024-04-27T06:18:13.177Z In(05) host-72431 Preprocessed UTS_RELEASE, got value "6.8.7-300.fc40.x86_64".
+2024-04-27T06:18:13.178Z In(05) host-72431 The header path "/lib/modules/6.8.7-300.fc40.x86_64/build/include" for the kernel "6.8.7-300.fc40.x86_64" is valid.  Whoohoo!
+2024-04-27T06:18:13.178Z In(05) host-72431 Using temp dir "/tmp".
+2024-04-27T06:18:23.612Z In(05) host-72431 Stopping vmware (via systemctl):  [  OK  ]
+2024-04-27T06:18:23.612Z In(05) host-72431 make: Entering directory '/tmp/modconfig-l1gUoc/vmmon-only'
+2024-04-27T06:18:23.612Z In(05) host-72431 /usr/bin/make -C /lib/modules/6.8.7-300.fc40.x86_64/build/include/.. M=$PWD SRCROOT=$PWD/. \
+2024-04-27T06:18:23.612Z In(05) host-72431   MODULEBUILDDIR= modules
+2024-04-27T06:18:23.612Z In(05) host-72431 make[1]: Entering directory '/usr/src/kernels/6.8.7-300.fc40.x86_64'
+2024-04-27T06:18:23.612Z In(05) host-72431   CC [M]  /tmp/modconfig-l1gUoc/vmmon-only/linux/driver.o
+2024-04-27T06:18:23.612Z In(05) host-72431   CC [M]  /tmp/modconfig-l1gUoc/vmmon-only/linux/driverLog.o
+2024-04-27T06:18:23.612Z In(05) host-72431   CC [M]  /tmp/modconfig-l1gUoc/vmmon-only/linux/hostif.o
+2024-04-27T06:18:23.612Z In(05) host-72431   CC [M]  /tmp/modconfig-l1gUoc/vmmon-only/common/apic.o
+2024-04-27T06:18:23.612Z In(05) host-72431   CC [M]  /tmp/modconfig-l1gUoc/vmmon-only/common/comport.o
+2024-04-27T06:18:23.612Z In(05) host-72431   CC [M]  /tmp/modconfig-l1gUoc/vmmon-only/common/cpuid.o
+2024-04-27T06:18:23.612Z In(05) host-72431   CC [M]  /tmp/modconfig-l1gUoc/vmmon-only/common/crosspage.o
+2024-04-27T06:18:23.612Z In(05) host-72431   CC [M]  /tmp/modconfig-l1gUoc/vmmon-only/common/memtrack.o
+2024-04-27T06:18:23.612Z In(05) host-72431   CC [M]  /tmp/modconfig-l1gUoc/vmmon-only/common/moduleloop.o
+2024-04-27T06:18:23.612Z In(05) host-72431   CC [M]  /tmp/modconfig-l1gUoc/vmmon-only/common/phystrack.o
+2024-04-27T06:18:23.612Z In(05) host-72431   CC [M]  /tmp/modconfig-l1gUoc/vmmon-only/common/sharedAreaVmmon.o
+2024-04-27T06:18:23.612Z In(05) host-72431   CC [M]  /tmp/modconfig-l1gUoc/vmmon-only/common/statVarsVmmon.o
+2024-04-27T06:18:23.612Z In(05) host-72431   CC [M]  /tmp/modconfig-l1gUoc/vmmon-only/common/task.o
+2024-04-27T06:18:23.612Z In(05) host-72431   CC [M]  /tmp/modconfig-l1gUoc/vmmon-only/common/vmx86.o
+2024-04-27T06:18:23.612Z In(05) host-72431   CC [M]  /tmp/modconfig-l1gUoc/vmmon-only/bootstrap/bootstrap.o
+2024-04-27T06:18:23.612Z In(05) host-72431   CC [M]  /tmp/modconfig-l1gUoc/vmmon-only/bootstrap/monLoader.o
+2024-04-27T06:18:23.612Z In(05) host-72431   CC [M]  /tmp/modconfig-l1gUoc/vmmon-only/bootstrap/monLoaderVmmon.o
+2024-04-27T06:18:23.612Z In(05) host-72431   CC [M]  /tmp/modconfig-l1gUoc/vmmon-only/bootstrap/vmmblob.o
+2024-04-27T06:18:23.612Z In(05) host-72431 make[1]: Leaving directory '/usr/src/kernels/6.8.7-300.fc40.x86_64'
+2024-04-27T06:18:23.612Z In(05) host-72431 make: Leaving directory '/tmp/modconfig-l1gUoc/vmmon-only'
+2024-04-27T06:18:23.612Z In(05) host-72431 make: Entering directory '/tmp/modconfig-l1gUoc/vmnet-only'
+2024-04-27T06:18:23.612Z In(05) host-72431 /usr/bin/make -C /lib/modules/6.8.7-300.fc40.x86_64/build/include/.. M=$PWD SRCROOT=$PWD/. \
+2024-04-27T06:18:23.612Z In(05) host-72431   MODULEBUILDDIR= modules
+2024-04-27T06:18:23.612Z In(05) host-72431 make[1]: Entering directory '/usr/src/kernels/6.8.7-300.fc40.x86_64'
+2024-04-27T06:18:23.612Z In(05) host-72431   CC [M]  /tmp/modconfig-l1gUoc/vmnet-only/driver.o
+2024-04-27T06:18:23.612Z In(05) host-72431   CC [M]  /tmp/modconfig-l1gUoc/vmnet-only/hub.o
+2024-04-27T06:18:23.612Z In(05) host-72431   CC [M]  /tmp/modconfig-l1gUoc/vmnet-only/userif.o
+2024-04-27T06:18:23.612Z In(05) host-72431   CC [M]  /tmp/modconfig-l1gUoc/vmnet-only/netif.o
+2024-04-27T06:18:23.612Z In(05) host-72431   CC [M]  /tmp/modconfig-l1gUoc/vmnet-only/bridge.o
+2024-04-27T06:18:23.612Z In(05) host-72431   CC [M]  /tmp/modconfig-l1gUoc/vmnet-only/procfs.o
+2024-04-27T06:18:23.612Z In(05) host-72431   CC [M]  /tmp/modconfig-l1gUoc/vmnet-only/smac_compat.o
+2024-04-27T06:18:23.612Z In(05) host-72431   CC [M]  /tmp/modconfig-l1gUoc/vmnet-only/smac.o
+2024-04-27T06:18:23.612Z In(05) host-72431   CC [M]  /tmp/modconfig-l1gUoc/vmnet-only/vnetEvent.o
+2024-04-27T06:18:23.612Z In(05) host-72431   CC [M]  /tmp/modconfig-l1gUoc/vmnet-only/vnetUserListener.o
+2024-04-27T06:18:23.612Z In(05) host-72431   LD [M]  /tmp/modconfig-l1gUoc/vmnet-only/vmnet.o
+2024-04-27T06:18:23.612Z In(05) host-72431   MODPOST /tmp/modconfig-l1gUoc/vmnet-only/Module.symvers
+2024-04-27T06:18:23.612Z In(05) host-72431   CC [M]  /tmp/modconfig-l1gUoc/vmnet-only/vmnet.mod.o
+2024-04-27T06:18:23.612Z In(05) host-72431   LD [M]  /tmp/modconfig-l1gUoc/vmnet-only/vmnet.ko
+2024-04-27T06:18:23.612Z In(05) host-72431   BTF [M] /tmp/modconfig-l1gUoc/vmnet-only/vmnet.ko
+2024-04-27T06:18:23.612Z In(05) host-72431 make[1]: Leaving directory '/usr/src/kernels/6.8.7-300.fc40.x86_64'
+2024-04-27T06:18:23.612Z In(05) host-72431 /usr/bin/make -C $PWD SRCROOT=$PWD/. \
+2024-04-27T06:18:23.612Z In(05) host-72431   MODULEBUILDDIR= postbuild
+2024-04-27T06:18:23.612Z In(05) host-72431 make[1]: Entering directory '/tmp/modconfig-l1gUoc/vmnet-only'
+2024-04-27T06:18:23.612Z In(05) host-72431 make[1]: 'postbuild' is up to date.
+2024-04-27T06:18:23.612Z In(05) host-72431 make[1]: Leaving directory '/tmp/modconfig-l1gUoc/vmnet-only'
+2024-04-27T06:18:23.612Z In(05) host-72431 cp -f vmnet.ko ./../vmnet.o
+2024-04-27T06:18:23.612Z In(05) host-72431 make: Leaving directory '/tmp/modconfig-l1gUoc/vmnet-only'
+2024-04-27T06:18:23.612Z In(05) host-72431 [AppLoader] GLib does not have GSettings support.
+2024-04-27T06:18:23.612Z In(05) host-72431 Using kernel build system.
+2024-04-27T06:18:23.612Z In(05) host-72431 /tmp/modconfig-l1gUoc/vmmon-only/common/task.c:548:1: warning: no previous prototype for ‘TaskGetFlatWriteableDataSegment’ [-Wmissing-prototypes]
+2024-04-27T06:18:23.612Z In(05) host-72431   548 | TaskGetFlatWriteableDataSegment(void)
+2024-04-27T06:18:23.612Z In(05) host-72431       | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2024-04-27T06:18:23.612Z In(05) host-72431 In file included from /tmp/modconfig-l1gUoc/vmmon-only/common/vmx86.c:52:
+2024-04-27T06:18:23.612Z In(05) host-72431 ./arch/x86/include/asm/timex.h: In function ‘random_get_entropy’:
+2024-04-27T06:18:23.612Z In(05) host-72431 ./arch/x86/include/asm/timex.h:12:24: error: implicit declaration of function ‘random_get_entropy_fallback’; did you mean ‘random_get_entropy’? [-Wimplicit-function-declaration]
+2024-04-27T06:18:23.612Z In(05) host-72431    12 |                 return random_get_entropy_fallback();
+2024-04-27T06:18:23.612Z In(05) host-72431       |                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+2024-04-27T06:18:23.612Z In(05) host-72431       |                        random_get_entropy
+2024-04-27T06:18:23.612Z In(05) host-72431 /tmp/modconfig-l1gUoc/vmmon-only/common/vmx86.c: At top level:
+2024-04-27T06:18:23.612Z In(05) host-72431 /tmp/modconfig-l1gUoc/vmmon-only/common/vmx86.c:700:1: warning: no previous prototype for ‘Vmx86FreeVMDriver’ [-Wmissing-prototypes]
+2024-04-27T06:18:23.612Z In(05) host-72431   700 | Vmx86FreeVMDriver(VMDriver *vm)
+2024-04-27T06:18:23.612Z In(05) host-72431       | ^~~~~~~~~~~~~~~~~
+2024-04-27T06:18:23.612Z In(05) host-72431 /tmp/modconfig-l1gUoc/vmmon-only/common/vmx86.c:733:1: warning: no previous prototype for ‘Vmx86AllocVMDriver’ [-Wmissing-prototypes]
+2024-04-27T06:18:23.612Z In(05) host-72431   733 | Vmx86AllocVMDriver(uint32 numVCPUs)
+2024-04-27T06:18:23.612Z In(05) host-72431       | ^~~~~~~~~~~~~~~~~~
+2024-04-27T06:18:23.612Z In(05) host-72431 make[3]: *** [scripts/Makefile.build:243: /tmp/modconfig-l1gUoc/vmmon-only/common/vmx86.o] Error 1
+2024-04-27T06:18:23.612Z In(05) host-72431 make[3]: *** Waiting for unfinished jobs....
+2024-04-27T06:18:23.612Z In(05) host-72431 /tmp/modconfig-l1gUoc/vmmon-only/linux/hostif.c:2926:1: warning: no previous prototype for ‘HostIFCheckTrackedMPN’ [-Wmissing-prototypes]
+2024-04-27T06:18:23.612Z In(05) host-72431  2926 | HostIFCheckTrackedMPN(VMDriver *vm, // IN: The VM instance
+2024-04-27T06:18:23.612Z In(05) host-72431       | ^~~~~~~~~~~~~~~~~~~~~
+2024-04-27T06:18:23.612Z In(05) host-72431 /tmp/modconfig-l1gUoc/vmmon-only/linux/hostif.c:3046:1: warning: no previous prototype for ‘HostIFWritePhysicalWork’ [-Wmissing-prototypes]
+2024-04-27T06:18:23.612Z In(05) host-72431  3046 | HostIFWritePhysicalWork(MA ma,             // MA to be written to
+2024-04-27T06:18:23.612Z In(05) host-72431       | ^~~~~~~~~~~~~~~~~~~~~~~
+2024-04-27T06:18:23.612Z In(05) host-72431 /tmp/modconfig-l1gUoc/vmmon-only/linux/hostif.c:3205:1: warning: no previous prototype for ‘HostIFStartTimer’ [-Wmissing-prototypes]
+2024-04-27T06:18:23.612Z In(05) host-72431  3205 | HostIFStartTimer(Bool rateChanged,  //IN: Did rate change?
+2024-04-27T06:18:23.612Z In(05) host-72431       | ^~~~~~~~~~~~~~~~
+2024-04-27T06:18:23.612Z In(05) host-72431 /tmp/modconfig-l1gUoc/vmmon-only/linux/driver.c:271:1: warning: no previous prototype for ‘LinuxDriverInit’ [-Wmissing-prototypes]
+2024-04-27T06:18:23.612Z In(05) host-72431   271 | LinuxDriverInit(void)
+2024-04-27T06:18:23.612Z In(05) host-72431       | ^~~~~~~~~~~~~~~
+2024-04-27T06:18:23.612Z In(05) host-72431 /tmp/modconfig-l1gUoc/vmmon-only/linux/driver.c:339:1: warning: no previous prototype for ‘LinuxDriverExit’ [-Wmissing-prototypes]
+2024-04-27T06:18:23.612Z In(05) host-72431   339 | LinuxDriverExit(void)
+2024-04-27T06:18:23.612Z In(05) host-72431       | ^~~~~~~~~~~~~~~
+2024-04-27T06:18:23.612Z In(05) host-72431 make[2]: *** [/usr/src/kernels/6.8.7-300.fc40.x86_64/Makefile:1939: /tmp/modconfig-l1gUoc/vmmon-only] Error 2
+2024-04-27T06:18:23.612Z In(05) host-72431 make[1]: *** [Makefile:252: __sub-make] Error 2
+2024-04-27T06:18:23.612Z In(05) host-72431 make: *** [Makefile:117: vmmon.ko] Error 2
+2024-04-27T06:18:23.612Z In(05) host-72431 Using kernel build system.
+2024-04-27T06:18:23.612Z In(05) host-72431 /tmp/modconfig-l1gUoc/vmnet-only/vnetUserListener.c:87:1: warning: no previous prototype for ‘VNetUserListener_Create’ [-Wmissing-prototypes]
+2024-04-27T06:18:23.612Z In(05) host-72431    87 | VNetUserListener_Create(uint32 classMask,  // IN: the listener's class mask
+2024-04-27T06:18:23.612Z In(05) host-72431       | ^~~~~~~~~~~~~~~~~~~~~~~
+2024-04-27T06:18:23.612Z In(05) host-72431 /tmp/modconfig-l1gUoc/vmnet-only/netif.c:173:1: warning: no previous prototype for ‘VNetNetIf_Create’ [-Wmissing-prototypes]
+2024-04-27T06:18:23.612Z In(05) host-72431   173 | VNetNetIf_Create(char *devName,  // IN:
+2024-04-27T06:18:23.612Z In(05) host-72431       | ^~~~~~~~~~~~~~~~
+2024-04-27T06:18:23.612Z In(05) host-72431 /tmp/modconfig-l1gUoc/vmnet-only/userif.c:1091:1: warning: no previous prototype for ‘VNetUserIf_Create’ [-Wmissing-prototypes]
+2024-04-27T06:18:23.612Z In(05) host-72431  1091 | VNetUserIf_Create(VNetPort **ret) // OUT
+2024-04-27T06:18:23.612Z In(05) host-72431       | ^~~~~~~~~~~~~~~~~
+2024-04-27T06:18:23.612Z In(05) host-72431 /tmp/modconfig-l1gUoc/vmnet-only/bridge.c:258:1: warning: no previous prototype for ‘VNetBridge_Create’ [-Wmissing-prototypes]
+2024-04-27T06:18:23.612Z In(05) host-72431   258 | VNetBridge_Create(const char *devName, // IN:  name of device (e.g., "eth0")
+2024-04-27T06:18:23.612Z In(05) host-72431       | ^~~~~~~~~~~~~~~~~
+2024-04-27T06:18:23.612Z In(05) host-72431 /tmp/modconfig-l1gUoc/vmnet-only/bridge.c:1411:1: warning: no previous prototype for ‘VNetBridgeSendLargePacket’ [-Wmissing-prototypes]
+2024-04-27T06:18:23.612Z In(05) host-72431  1411 | VNetBridgeSendLargePacket(struct sk_buff *skb,        // IN: packet to split
+2024-04-27T06:18:23.612Z In(05) host-72431       | ^~~~~~~~~~~~~~~~~~~~~~~~~
+2024-04-27T06:18:23.612Z In(05) host-72431 /tmp/modconfig-l1gUoc/vmnet-only/vmnet.o: warning: objtool: VNetCsumCopyDatagram+0x52: call to csum_partial_copy_nocheck() with UACCESS enabled
+2024-04-27T06:18:23.612Z In(05) host-72431 /tmp/modconfig-l1gUoc/vmnet-only/vmnet.o: warning: objtool: init_module(): not an indirect call target
+2024-04-27T06:18:23.612Z In(05) host-72431 /tmp/modconfig-l1gUoc/vmnet-only/vmnet.o: warning: objtool: cleanup_module(): not an indirect call target
+2024-04-27T06:18:23.612Z In(05) host-72431 Skipping BTF generation for /tmp/modconfig-l1gUoc/vmnet-only/vmnet.ko due to unavailability of vmlinux
+2024-04-27T06:18:23.612Z In(05) host-72431 Unable to install all modules.  See log for details.
+2024-04-27T06:18:23.612Z In(05) host-72431 
