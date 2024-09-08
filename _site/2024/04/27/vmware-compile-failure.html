@@ -13,11 +13,11 @@
 <meta property="og:url" content="http://localhost:4000/2024/04/27/vmware-compile-failure.html" />
 <meta property="og:site_name" content="Journal" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2024-04-27T00:00:00-04:00" />
+<meta property="article:published_time" content="2024-04-27T00:00:00+09:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Kernel header compile error for Vmware Workstation Pro 17 on Fedora 6.8.7-300.fc40.x86_64" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-04-27T00:00:00-04:00","datePublished":"2024-04-27T00:00:00-04:00","description":"The Problem I was trying to run Vmware Workstation Pro 17 after updating to Fedora 6.8.7-300.fc40.x86_64 and it failed. Vmware spat out a log for why Vmware failed: vmware-72431.log. The crucial part of this log is the compile error: 2024-04-27T06:18:06.233Z In(05) host-72431 ./arch/x86/include/asm/timex.h:12:24: error: implicit declaration of function ‘random_get_entropy_fallback’; did you mean ‘random_get_entropy’? [-Wimplicit-function-declaration] 2024-04-27T06:18:06.233Z In(05) host-72431 12 | return random_get_entropy_fallback(); 2024-04-27T06:18:06.233Z In(05) host-72431 | ^~~~~~~~~~~~~~~~~~~~~~~~~~~ 2024-04-27T06:18:06.233Z In(05) host-72431 | random_get_entropy","headline":"Kernel header compile error for Vmware Workstation Pro 17 on Fedora 6.8.7-300.fc40.x86_64","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2024/04/27/vmware-compile-failure.html"},"url":"http://localhost:4000/2024/04/27/vmware-compile-failure.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-04-27T00:00:00+09:00","datePublished":"2024-04-27T00:00:00+09:00","description":"The Problem I was trying to run Vmware Workstation Pro 17 after updating to Fedora 6.8.7-300.fc40.x86_64 and it failed. Vmware spat out a log for why Vmware failed: vmware-72431.log. The crucial part of this log is the compile error: 2024-04-27T06:18:06.233Z In(05) host-72431 ./arch/x86/include/asm/timex.h:12:24: error: implicit declaration of function ‘random_get_entropy_fallback’; did you mean ‘random_get_entropy’? [-Wimplicit-function-declaration] 2024-04-27T06:18:06.233Z In(05) host-72431 12 | return random_get_entropy_fallback(); 2024-04-27T06:18:06.233Z In(05) host-72431 | ^~~~~~~~~~~~~~~~~~~~~~~~~~~ 2024-04-27T06:18:06.233Z In(05) host-72431 | random_get_entropy","headline":"Kernel header compile error for Vmware Workstation Pro 17 on Fedora 6.8.7-300.fc40.x86_64","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2024/04/27/vmware-compile-failure.html"},"url":"http://localhost:4000/2024/04/27/vmware-compile-failure.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Journal" /></head>
 <body><header class="site-header" role="banner">
@@ -43,7 +43,7 @@
   <header class="post-header">
     <h1 class="post-title p-name" itemprop="name headline">Kernel header compile error for Vmware Workstation Pro 17 on Fedora 6.8.7-300.fc40.x86_64</h1>
     <p class="post-meta">
-      <time class="dt-published" datetime="2024-04-27T00:00:00-04:00" itemprop="datePublished">Apr 27, 2024
+      <time class="dt-published" datetime="2024-04-27T00:00:00+09:00" itemprop="datePublished">Apr 27, 2024
       </time></p>
   </header>
 
@@ -57,12 +57,7 @@
 </code></pre></div></div>
 
 <h1 id="solution">Solution</h1>
-<p><code class="language-plaintext highlighter-rouge"># cd /usr/src/kernels/6.8.7-300.fc40.x86_64/arch/x86/include/asm/</code></p>
-
-<p><code class="language-plaintext highlighter-rouge"># cp timex.h timex.h.original</code></p>
-
-<p>Now open the file and go to the error and replace <code class="language-plaintext highlighter-rouge">random_get_entrophy_fallback</code> to <code class="language-plaintext highlighter-rouge">random_get_entrophy</code>. It should be fixed now.</p>
-
+<p>Refer to <a href="https://docs.fedoraproject.org/en-US/quick-docs/vmware-what-is-it#_installation_2">Fedora Project</a></p>
 
   </div><a class="u-url" href="/2024/04/27/vmware-compile-failure.html" hidden></a>
 </article>
@@ -81,11 +76,11 @@
           <li class="p-name">Journal</li><li><a class="u-email" href="mailto:leechr123159@pm.me, lockpick.lee@mail.utoronto.ca">leechr123159@pm.me, lockpick.lee@mail.utoronto.ca</a></li></ul>
       </div>
 
-      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/jekyll"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">jekyll</span></a></li><li><a href="https://www.twitter.com/jekyllrb"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">jekyllrb</span></a></li></ul>
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/lockpick123159"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">lockpick123159</span></a></li><li><a href="https://instagram.com/lockpick135"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#instagram"></use></svg> <span class="username">lockpick135</span></a></li></ul>
 </div>
 
       <div class="footer-col footer-col-3">
-        <p>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</p>
+        <p>Computer Science blog for Kanghun Lee</p>
       </div>
     </div>
 

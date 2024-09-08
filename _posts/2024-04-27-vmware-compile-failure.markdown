@@ -13,10 +13,4 @@ I was trying to run Vmware Workstation Pro 17 after updating to Fedora 6.8.7-300
 ```
 
 # Solution
-`# cd /usr/src/kernels/6.8.7-300.fc40.x86_64/arch/x86/include/asm/`
-
-`# cp timex.h timex.h.original`
-
-Now open the file and go to the error and replace `random_get_entrophy_fallback` to `random_get_entrophy`. It should be fixed now.
-
-
+Refer to [Fedora Project](https://docs.fedoraproject.org/en-US/quick-docs/vmware-what-is-it#_installation_2)
