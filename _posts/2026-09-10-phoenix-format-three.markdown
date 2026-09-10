@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Phoenix Format Three
-permalink: /phoenix/
 ---
 
 ```python
